@@ -1,0 +1,27 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex; justify-content: center; align-items: center; min-height: 100vh;
+}
+.homepage{
+    margin: 100px auto; width: 90%; 
+}
+img{
+    max-width: 550px; float: left; border-radius: 10px; 
+}
+.text{
+    margin-left: 650px; margin-top: 125px;
+}
+.text h2{
+    font-size: 13px; padding: 5px;color: chocolate; margin-bottom: 5px;
+}
+.text h1{
+    font-size: 30px; color: rgb(0,0,0, .9); margin-bottom: 20px; line-height: 48px;
+}
+.text p{
+    line-height: 25px; text-align: left;
+}
+.text button{
+    background-color:#d4583b; color: aliceblue; text-align: center; width: 150px; height: 60px; border-radius: 15px; font-size: 18px; margin-top: 25px;border: coral; 
+}
