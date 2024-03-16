@@ -1,27 +1,75 @@
-*{
-    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;
+.honeymoon-specials-container{ 
+    display: flex;
+    width: 1404px;
+    height: 745.48px;
+    top: 1937px;
+    left: 196px;
 }
-body{
-    display: flex; justify-content: center; align-items: center; min-height: 100vh;
+
+.hs-image{
+    width: 654.4px; 
+    height: 745.48px; 
+    top: 1937px; 
+    left: 196px;
+
 }
-.homepage{
-    margin: 100px auto; width: 90%; 
+.hs-title-box{
+    margin: 0 auto;
+    padding-top: 185px;
+    padding-left: 50px;
+    width: 583px;
+    height: 380.42px;
+    top: 2109px;
+    left: 1017px;
+    
+
 }
-img{
-    max-width: 550px; float: left; border-radius: 10px; 
+.hs-subtitle{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color:  rgba(223, 105, 81, 1);
 }
-.text{
-    margin-left: 650px; margin-top: 125px;
+.hs-title{
+    font-family: Volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 71.04px;
+    color: rgba(24,30,75,1);
+
 }
-.text h2{
-    font-size: 13px; padding: 5px;color: chocolate; margin-bottom: 5px;
+.hs-paragraph{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
 }
-.text h1{
-    font-size: 30px; color: rgb(0,0,0, .9); margin-bottom: 20px; line-height: 48px;
-}
-.text p{
-    line-height: 25px; text-align: left;
-}
-.text button{
-    background-color:#d4583b; color: aliceblue; text-align: center; width: 150px; height: 60px; border-radius: 15px; font-size: 18px; margin-top: 25px;border: coral; 
+.hs-button{
+    margin-top: 25px;
+    padding: 0px 36.57px 9.4px 0px;
+    gap: 10.45px;
+    background-color: rgba(223, 105, 81, 1);
+    border-radius: 10px;
+    width: 176.56px;
+    height: 56.42px;
+    top: 2433px;
+    left: 1017px;
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+    
+}   
+.hs-text{
+    width: 129px;
+    height: 25px;
+    font-family: Poppins;
+    font-weight: 600px;
+    font-size: 16.72px;
+    line-height: 40px;
+    padding: 0 auto;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    
 }
