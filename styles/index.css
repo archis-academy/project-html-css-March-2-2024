@@ -1,31 +1,29 @@
+.homepage-honeymoon-specials{
+    display: flex;
+    justify-content: center;
+}
+
 .honeymoon-specials-container{ 
     display: flex;
-    width: 1404px;
-    height: 745.48px;
-    top: 1937px;
-    left: 196px;
-}
-
-.hs-image{
-    width: 654.4px; 
-    height: 745.48px; 
-    top: 1937px; 
-    left: 196px;
-
-}
-.hs-title-box{
-    margin: 0 auto;
-    padding-top: 185px;
-    padding-left: 50px;
-    width: 583px;
-    height: 380.42px;
-    top: 2109px;
-    left: 1017px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    flex: 1;
     
-
+}
+.hs-image-box{
+    max-width: 655px;
+}
+.hs-image{
+    width: 100%;     
+    
+}
+.hs-title-box{    
+    max-width: 583px;    
+    
 }
 .hs-subtitle{
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
@@ -33,7 +31,7 @@
     color:  rgba(223, 105, 81, 1);
 }
 .hs-title{
-    font-family: Volkhov;
+    font-family: "Volkhov", serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 71.04px;
@@ -47,29 +45,12 @@
     line-height: 26px;
     color: rgba(0, 0, 0, 1);
 }
-.hs-button{
-    margin-top: 25px;
-    padding: 0px 36.57px 9.4px 0px;
-    gap: 10.45px;
+.hs-button{   
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 15px 25px;
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(223, 105, 81, 1);
     border-radius: 10px;
-    width: 176.56px;
-    height: 56.42px;
-    top: 2433px;
-    left: 1017px;
-    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
-    
+    border: none;    
 }   
-.hs-text{
-    width: 129px;
-    height: 25px;
-    font-family: Poppins;
-    font-weight: 600px;
-    font-size: 16.72px;
-    line-height: 40px;
-    padding: 0 auto;
-    border: none;
-    color: rgba(255, 255, 255, 1);
-    background-color: transparent;
-    
-}
