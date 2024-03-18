@@ -1,0 +1,26 @@
+.PR-3-homepage-best-services{
+    justify-content: center; align-items: center; display: block; min-height: 100vh;
+}
+
+.PR-3-bs-text1 h3{
+    align-content: center;
+    font-size: 18px; color: #DF6951; margin-left: 600px; margin-top: 200px;
+
+}
+.PR-3-bs-text2 h2{
+    align-content: center;
+    font-size: 50px; color:#181E4B ; line-height: 64.5px;margin-top: 10px; margin-left: 500px ;
+}
+.PR-3-bs-images { 
+    display: flex; 
+    margin: 0 20px; 
+    padding: 20px; 
+} 
+
+.photo { 
+    width: 120px; 
+    margin-left: 100px;
+    padding: 0 30px; 
+    height: 100px; 
+} 
+
