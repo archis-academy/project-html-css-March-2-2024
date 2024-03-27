@@ -63,118 +63,52 @@
 
 .homepage-explore-section {
   display: flex;
-  justify-content: center;
 }
 .explore-section-container {
   display: flex;
-  max-width: 1920px;
+  width: 100%;
+  min-height: 400px;
 }
-.es-left-box {
-  max-width: 960px;
+.es-boxes {
+  position: relative;
+  width: 100%;
+  height: 400px;
 }
-.es-left-img {
+.es-images {
   color: rgba(30, 30, 30, 0.38);
   filter: brightness(70%);
-}
-.es-left-tb {
-  max-width: 405px;
-  position: relative;
-  bottom: 50%;
-  left: 30%;
-}
-.es-sl {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(12px, 3vw, 18px);
-  font-weight: 700;
-  line-height: 27px;
-  color: rgba(255, 239, 236, 1);
-  padding: 15px 25px;
-  position: relative;
-  left: 120px;
-  top: 25px;
-}
-.es-tl {
-  font-family: "Volkhov", serif;
-  font-size: clamp(24px, 5vw, 50px);
-  font-weight: 700;
-  line-height: clamp(40px, 5vw, 72px);
-  color: rgba(255, 255, 255, 1);
-}
-.es-il {
-  position: relative;
-  left: 220px;
-  bottom: 13px;
-}
-.es-bl {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  padding: 15px 25px;
-  color: rgba(255, 255, 255, 1);
-  background-color: transparent;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
-  position: relative;
-  left: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.es-right-box {
-  max-width: 960px;
+.es-titles {
+  max-width: 405px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
 }
-.es-right-img {
-  color: rgba(30, 30, 30, 0.38);
-  filter: brightness(70%);
-}
-.es-right-tb {
-  max-width: 397px;
-  position: relative;
-  bottom: 50%;
-  left: 30%;
-}
-.es-sr {
+.es-subtitles {
   font-family: "Poppins", sans-serif;
   font-size: clamp(12px, 3vw, 18px);
   font-weight: 700;
   line-height: 27px;
   color: rgba(255, 239, 236, 1);
   padding: 15px 25px;
-  position: relative;
-  left: 120px;
-  top: 45px;
 }
-.es-tr {
+
+.es-tlr {
   font-family: "Volkhov", serif;
   font-size: clamp(24px, 5vw, 50px);
   font-weight: 700;
   line-height: clamp(40px, 5vw, 72px);
   color: rgba(255, 255, 255, 1);
-  position: relative;
-  top: 30px;
 }
-.es-ir {
-  position: relative;
-  left: 180px;
-  top: 10px;
-}
-.es-br {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  padding: 15px 25px;
-  color: rgba(255, 255, 255, 1);
-  background-color: transparent;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
-  position: relative;
-  right: 110px;
-  top: 50px;
-}
-@media (max-width: 1235px) {
-  .homepage-explore-section {
-    padding: 0 25px;
-  }
+
+@media (max-width: 1000px) {
   .explore-section-container {
     justify-content: center;
-    gap: 15px;
   }
 }
