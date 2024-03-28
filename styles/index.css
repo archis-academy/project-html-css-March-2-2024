@@ -126,4 +126,7 @@
   .explore-section-container {
     flex-wrap: wrap;
   }
+  .es-signatures {
+    width: 250px;
+  }
 }
