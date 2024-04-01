@@ -166,6 +166,104 @@
     gap: 15px;
   }
 }
+.homepage-favorite-resorts {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-resorts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: 1350px;
+}
+
+.fr-context {
+  max-width: 458px;
+}
+
+.fr-heading-box {
+  max-width: 458px;
+  margin-bottom: 25px;
+}
+
+.hb-subheading {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: rgba(223, 105, 81, 1);
+  margin-bottom: 15px;
+}
+
+.hb-heading {
+  font-family: Volkhov;
+  font-size: clamp(40px, 4vw, 50px);
+  font-weight: 700;
+  line-height: 64.5px;
+  color: rgba(24, 30, 75, 1);
+}
+
+.fr-script-box {
+  max-width: 395px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sb-whole-script {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ws-image {
+  max-width: 47px;
+}
+
+.sb-partial-script {
+  max-width: 327px;
+}
+
+.ps-title {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.92px;
+  color: rgba(94, 98, 130, 1);
+  margin-bottom: 3px;
+}
+
+.ps-paragraph {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.92px;
+  color: rgba(94, 98, 130, 1);
+}
+
+.fr-illustration {
+  max-width: 869px;
+}
+
+.illustration {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .favorite-resorts-container {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .illustration {
+    display: block;
+  }
+}
 
 .homepage-explore-section {
   display: flex;
