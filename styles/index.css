@@ -184,20 +184,20 @@
 }
 
 .fr-heading-box {
-  max-width: 458;
+  max-width: 458px;
   margin-bottom: 25px;
 }
 
-.subheading {
+.hb-subheading {
   font-family: Poppins;
   font-size: 18px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 27px; 
   color: rgba(223, 105, 81, 1);
   margin-bottom: 15px;
 }
 
-.heading {
+.hb-heading {
   font-family: Volkhov;
   font-size: clamp(40px, 4vw, 50px);
   font-weight: 700;
@@ -209,25 +209,25 @@
   max-width: 395px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
-.whole-script {
+.sb-whole-script {
   display: flex; 
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.whole-script .image {
-  width: 47px;
+.ws-image {
+  max-width: 47px;
 }
 
-.script {
-  width: 327px;
+.sb-partial-script {
+  max-width: 327px;
 }
 
-.script .title {
+.ps-title {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
@@ -236,7 +236,7 @@
   margin-bottom: 3px;
 }
 
-.script .paragraph{
+.ps-paragraph{
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -255,6 +255,7 @@
 @media (max-width: 1200px) {
   .favorite-resorts-container {
       justify-content: center;
+      gap: 25px;
   }
 
   .illustration {
