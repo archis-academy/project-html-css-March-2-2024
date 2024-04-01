@@ -1,3 +1,89 @@
+.homepage-hero-section {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section-container {
+  width: 1920px;
+  height: 1185px;
+}
+
+.hes-top {
+  height: 976px;
+  background: url("../images/homepage-background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1278px;
+  height: 67px;
+  position: absolute;
+  left: 321px;
+  top: 63px;
+}
+
+.hes-navbar a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 40px;
+  text-decoration: none;
+  position: relative;
+}
+
+.hes-navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+.hes-navbar a:hover::after {
+  width: 100%;
+  height: 3px;
+  border-radius: 34px;
+  background-color: rgba(223, 105, 81, 1);
+}
+
+.hes-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 15px 25px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(223, 105, 81, 1);
+  border-radius: 10px;
+  border: none;
+}
+
+.hes-bottom {
+  top: 976px;
+  height: 200px;
+}
+.hes-logos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1500px;
+  height: 68px;
+  filter: grayscale(100%);
+  opacity: 44%;
+  padding-left: 150px;
+  padding-top: 75px;
+}
+.hes-logo {
+  width: 160px;
+  height: 50px;
+}
+
 .homepage-best-services {
   display: flex;
   justify-content: center;
