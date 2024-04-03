@@ -12,47 +12,59 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <!--Erkin Hero Section START-->
     <div class="homepage-hero-section">
-      <div class="hero-section-container">
-        <div class="hes-top">
-          <div class="hes-header">
-            <img class="hes-header-logo" src="images/logo.png" alt="" />
-            <nav class="hes-navbar">
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Services</a>
-              <a href="">Upcomming Packages</a>
-            </nav>
-            <button class="hes-button">Get in Touch</button>
-          </div>
+      <div class="hero-section-navbar">
+        <div class="hes-logo">
+          <img src="images/logo.png" alt="Travel" />
         </div>
-        <div class="hes-bottom">
-          <div class="hes-logos-container">
-            <img
-              class="hes-logo"
-              src="images/image 909.png"
-              alt="Fly Emirates"
-            />
-            <img
-              class="hes-logo"
-              src="images/partners-logo5.png"
-              alt="Trivago"
-            />
-            <img class="hes-logo" src="images/partner-logo4.png" alt="Airbnb" />
-            <img
-              class="hes-logo"
-              src="images/image 913.png"
-              alt="Turkish Airlines"
-            />
-            <img class="hes-logo" src="images/image 912.png" alt="Swiss" />
-          </div>
+        <ul class="hes-links">
+          <li><a class="hes-btn" href="Home">Home</a></li>
+          <li><a class="hes-btn" href="About">About</a></li>
+          <li><a class="hes-btn" href="Services">Services</a></li>
+          <li>
+            <a class="hes-btn" href="Upcomming Packages">Upcomming Packages</a>
+          </li>
+        </ul>
+        <a href="#" class="hes-action-btn">Get in Touch</a>
+
+        <div class="hes-toggle-btn"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="hes-dropdown-menu">
+          <li><a class="hes-btn" href="Home">Home</a></li>
+          <li><a class="hes-btn" href="About">About</a></li>
+          <li><a class="hes-btn" href="Services">Services</a></li>
+          <li>
+            <a class="hes-btn" href="Upcomming Packages">Upcomming Packages</a>
+          </li>
+          <li><a href="#" class="hes-action-btn">Get in Touch</a></li>
         </div>
       </div>
     </div>
+    <script>
+      const toggleBtn = document.querySelector(".hes-toggle-btn");
+      const toggleBtnIcon = document.querySelector(".hes-toggle-btn i");
+      const dropDownMenu = document.querySelector(".hes-dropdown-menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
     <!-- Erkin Hero Section END-->
     <!-- Esra Best Servicess Start-->
     <div class="homepage-best-services">
