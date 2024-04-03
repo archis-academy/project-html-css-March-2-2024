@@ -335,3 +335,109 @@
     width: 250px;
   }
 }
+
+.homepage-testimonials {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+}
+
+.testimonials-container {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1;
+  flex-wrap: wrap; */
+}
+
+.tc-testimonial-section {
+  max-width: 639px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.ts-title-box {
+  max-width: 639px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tb-subheading  {
+  max-width: 126px;
+  font-family: Poppins;
+  font-size: clamp(14px, 4vw, 18px);
+  font-weight: 700;
+  line-height: clamp(18px, 4vw, 27px);
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(223, 105, 81, 1);
+}
+
+.tb-heading {
+  font-family: Volkhov;
+  font-size: clamp(25px, 4vw, 50px);
+  font-weight: 700;
+  line-height: clamp(45px, 4vw, 71.04px);
+  text-align: center;
+  color: rgba(24, 30, 75, 1);  
+}
+
+.ts-script-box {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.sb-script-without-arrows {
+  max-width: 538px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius:17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* .swa-designer-image {
+  position: absolute;
+  z-index: 1;
+} */
+
+/* .swa-double-quotes {
+  position: relative;
+  z-index: -1;
+} */
+
+.swa-paragraph {
+  max-width: 393px;
+  font-family: Poppins;
+  font-size: clamp(10px, 4vw, 12.22px);
+  font-weight: 400;
+  line-height: clamp(18px, 4vw, 24.45px);
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.swa-footer {
+  max-width: 197px;
+  font-family: Poppins;
+  font-size: clamp(6px, 4vw, 12.22px);
+  font-weight: 700;
+  line-height: clamp(16px, 4vw, 24.45px);
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
