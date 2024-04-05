@@ -12,59 +12,35 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
 
   <body>
     <!--Erkin Hero Section START-->
     <div class="homepage-hero-section">
-      <div class="hero-section-navbar">
-        <div class="hes-logo">
-          <img src="images/logo.png" alt="Travel" />
+      <div class="hero-section-container">
+        <img class="hes-header-logo" src="images/logo.png" alt="" />
+        <div class="hes-navbar">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li>
+              <a href="">Services</a>
+              <div class="hes-dropdown-menu">
+                <img src="images/popup-cloud.png" alt="" />
+                <ul>
+                  <li><a href="">Honeymoon Packages</a></li>
+                  <li><a href="">Tours Packages</a></li>
+                  <li><a href="">Musical Events</a></li>
+                  <li><a href="">Build Package</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Upcomming Packages</a></li>
+          </ul>
         </div>
-        <ul class="hes-links">
-          <li><a class="hes-btn" href="Home">Home</a></li>
-          <li><a class="hes-btn" href="About">About</a></li>
-          <li><a class="hes-btn" href="Services">Services</a></li>
-          <li>
-            <a class="hes-btn" href="Upcomming Packages">Upcomming Packages</a>
-          </li>
-        </ul>
-        <a href="#" class="hes-action-btn">Get in Touch</a>
-
-        <div class="hes-toggle-btn"><i class="fa-solid fa-bars"></i></div>
-
-        <div class="hes-dropdown-menu">
-          <li><a class="hes-btn" href="Home">Home</a></li>
-          <li><a class="hes-btn" href="About">About</a></li>
-          <li><a class="hes-btn" href="Services">Services</a></li>
-          <li>
-            <a class="hes-btn" href="Upcomming Packages">Upcomming Packages</a>
-          </li>
-          <li><a href="#" class="hes-action-btn">Get in Touch</a></li>
-        </div>
+        <button class="hes-button">Get in Touch</button>
       </div>
     </div>
-    <script>
-      const toggleBtn = document.querySelector(".hes-toggle-btn");
-      const toggleBtnIcon = document.querySelector(".hes-toggle-btn i");
-      const dropDownMenu = document.querySelector(".hes-dropdown-menu");
-
-      toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
-
-        toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      };
-    </script>
     <!-- Erkin Hero Section END-->
     <!-- Esra Best Servicess Start-->
     <div class="homepage-best-services">
