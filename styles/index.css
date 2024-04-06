@@ -7,7 +7,15 @@
   background-position: center;
   position: relative;
 }
+.hero-section {
+  display: flex;
 
+  justify-content: center;
+  max-width: 1920px;
+  flex-wrap: wrap;
+  flex: 1;
+  position: relative;
+}
 .hero-section-container {
   display: flex;
   justify-content: space-between;
@@ -18,7 +26,10 @@
   left: 335px;
   top: 60px;
 }
-
+.hes-title-box {
+  position: absolute;
+  display: flex;
+}
 .hes-navbar a {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
@@ -81,6 +92,86 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+.hes-title-box {
+  display: block;
+  top: 298px;
+  left: 320px;
+  width: 844px;
+  height: 442px;
+}
+.hes-title-box h2 {
+  width: 631px;
+  height: 272px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 68px;
+  color: #ffffff;
+}
+.hes-input-box {
+  top: 570px;
+  background-color: #f3f3f399;
+  border-radius: 6px;
+  width: 844px;
+  height: 102px;
+  backdrop-filter: blur(5px);
+}
+.hes-select-box {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hes-select-box button {
+  width: 176px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 15px 25px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(223, 105, 81, 1);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.hes-input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  color: #ffffff;
+  background-color: rgba(243, 243, 243, 0.6);
+}
+.hes-little-imgs {
+  position: relative;
+  right: 45px;
+  display: flex;
+  padding-top: 40px;
+}
+.hes-little-imgs h6 {
+  font-family: "Poppins" sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 35px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 40px;
+  position: absolute;
+  left: 225px;
+}
+.hes-little-imgs img {
+  position: absolute;
+}
+
+.hes-scroll-png {
+  position: absolute;
+  top: 800px;
+  left: 25px;
+}
+.hes-little-lines {
+  position: absolute;
+  top: 900px;
 }
 
 .homepage-best-services {
