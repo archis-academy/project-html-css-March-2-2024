@@ -263,8 +263,100 @@
   .illustration {
     display: block;
   }
+  .europe-sightseeing-tours-special-container{
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
 }
-
+ /* Umut Start */
+ .homepage-europe-sightseeing-tours{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 400px;
+  margin-left: 50px;
+}
+.europe-sightseeing-tours-special-container{
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1483px;
+  max-height: 751px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.est-image-box{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  max-width: 552px;
+  max-height: 711px;
+  flex-wrap: wrap;
+  z-index:-1;
+  margin-left: auto;
+  width: 110%;
+}
+.est-image{
+  width: 100%;
+}
+.est-title-box{
+  width: 639px;
+  height: 381px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.est-subtitle{
+  color:#DF6951;
+  font-family: "Poppins", sans-serif;
+  width: 126px;
+  height: 27px;
+  font-size: clamp(12px, 3vw, 18px);
+  letter-spacing: 2px;
+}
+.est-title{
+ color: #181e4b;
+ font-family: "Volkhov", serif;
+ font-size: clamp(14px, 3vw, 50px);
+ line-height: 71.04px;
+}
+.est-paragraph{
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(4px, 3vw, 16px);
+  font-weight: 400px;
+  width: 574px;
+  height: 103px;
+  margin: 25px 0;
+}
+.est-button{
+  left: 0;
+  bottom: 0;
+  width: 177px;
+  height: 57px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #DF6951;
+  padding: 0px, 36.57px, 9.4px, 0px;
+  gap: 10.45;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600px;
+}
+.Destination-image-box{
+  display: grid;
+  padding: 60px 0;
+  max-width: 231px;
+  max-height: 237px;
+  cursor: pointer;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  width: 100%;
+}
+/* Umut End */ 
 .homepage-explore-section {
   display: flex;
   padding: 50px 0;
