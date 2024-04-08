@@ -171,15 +171,15 @@
   margin: 150px 20px 50px 20px;
 }
 .tp-h5 {
-  color: #DF6951;
+  color: #df6951;
   font-size: 18px;
-  font-family: 'Poppins',serif;
+  font-family: "Poppins", serif;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 .tp-h2 {
   color: #181e4b;
-  font-family: 'Volkhov',sans-serif;
+  font-family: "Volkhov", sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 71px;
@@ -188,12 +188,12 @@
 .homepage-tour-package-container-box {
   display: grid;
   max-width: 1500px;
-  grid-template-columns: repeat(auto-fit , minmax(250px , 400px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
   gap: 100px;
   margin: auto;
   justify-content: center;
 }
-.tp-box{
+.tp-box {
   text-align: left;
 }
 .tp-box-images {
@@ -218,9 +218,9 @@
   font-size: 17px;
   color: #7d7d7d;
   font-weight: 400;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
-.tp-box-title{
+.tp-box-title {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5px;
@@ -229,45 +229,45 @@
 .tp-box-title h4 {
   color: #2f2f2f;
   font-size: 29px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
 }
-.tp-box-pricings{
+.tp-box-pricings {
   display: flex;
   gap: 20px;
   align-items: center;
   padding-bottom: 4px;
 }
 .tp-box-pricings h4 {
-  color: #DF6951;
+  color: #df6951;
   font-size: 29px;
   font-weight: 500;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .tp-box-pricings h5 {
   color: #7d7d7d;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 22px;
   font-weight: 500;
   text-decoration: line-through;
 }
 .tp-box-p {
   color: black;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 12px;
   font-weight: 400;
   line-height: 24.5px;
   letter-spacing: 0.61px;
   padding-bottom: 25px;
 }
-.tp-box-button{
+.tp-box-button {
   display: inline-block;
   padding: 10px 25px;
-  background-color: #DF6951;
+  background-color: #df6951;
   border-radius: 8px;
   font-size: 10px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 17px;
 }
