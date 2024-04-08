@@ -1,32 +1,31 @@
 .ps-slide-image {
-  width: 200px;
-  height: 100px;
+  height: 50px;
   opacity: 0.4;
+  padding: 0 55px;
   filter: alpha(opacity=40);
   filter: grayscale(100%);
+
 }
 
-.homepage-partners-section-container {
+.ps-logo {
+  display: flex;
+  animation: scroll 10s linear infinite;
+
+}
+.homepage-partners-section{
   width: 100%;
-  display: flex;
-  gap: 10em;
-  overflow: hidden;
-  animation: scroll 20s linear infinite;
+  background-color: smoke;
 }
-
-.homepage-partners-section {
-  width: 200%;
-  height: 100px;
-  position: relative;
-  background: white;
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+.homepage-partners-section-container {
+  overflow: hidden;
   display: flex;
-  gap: 20px;
+  max-width: 1350px;
+  margin: auto;
 }
 
 @keyframes scroll {
   from{transform: translateX(0);}
-  to {transform: translateX(-100%)}
+  to {transform: translatex(-100%)}
 }
 
 .homepage-best-services {
