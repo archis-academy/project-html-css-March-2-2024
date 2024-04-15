@@ -1,42 +1,29 @@
 .homepage-hero-section {
-  display: flex;
-  justify-content: center;
   height: 100vh;
   background: url("../images/homepage-background.png") no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 .hero-section {
-  display: flex;
-
   justify-content: center;
-  max-width: 1920px;
   flex-wrap: wrap;
   flex: 1;
-  position: relative;
 }
 .hero-section-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1278px;
-  height: 67px;
-  position: absolute;
-  left: 335px;
-  top: 60px;
+  max-width: 1350px;
+  margin: auto;
+  padding-top: 66px;
 }
-.hes-title-box {
-  position: absolute;
-  display: flex;
-}
+
 .hes-navbar a {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: 500;
   line-height: 21px;
   color: rgba(255, 255, 255, 1);
-  margin-left: 40px;
   text-decoration: none;
   position: relative;
 }
@@ -57,8 +44,9 @@
   border-radius: 34px;
   background-color: rgba(223, 105, 81, 1);
 }
-.hes-navbar ul {
-  display: inline-block;
+.hes-navbar {
+  display: flex;
+  gap: 40px;
 }
 .hes-navbar li {
   display: inline-block;
@@ -67,7 +55,6 @@
 .hes-dropdown-menu {
   position: absolute;
   display: none;
-  left: 585px;
 }
 .hes-dropdown-menu ul {
   position: absolute;
@@ -94,42 +81,39 @@
   cursor: pointer;
 }
 .hes-title-box {
-  display: block;
-  top: 298px;
-  left: 320px;
-  width: 844px;
-  height: 442px;
+  max-width: 1350px;
+  margin: auto;
+  padding-top: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .hes-title-box h2 {
-  width: 631px;
-  height: 272px;
+  max-width: 631px;
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 58px;
-  line-height: 68px;
+  font-size: clamp(24px, 5vw, 58px);
+  line-height: clamp(40px, 5vw, 68px);
   color: #ffffff;
 }
-.hes-input-box {
-  top: 570px;
-  background-color: #f3f3f399;
-  border-radius: 6px;
-  width: 844px;
-  height: 102px;
-  backdrop-filter: blur(5px);
-}
+
 .hes-select-box {
-  padding-top: 25px;
+  padding: 25px 25px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #f3f3f399;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  max-width: 75%;
+  flex-wrap: wrap;
 }
 .hes-select-box button {
-  width: 176px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 25px;
-  padding: 15px 25px;
+  padding: 15px 55px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(223, 105, 81, 1);
   border-radius: 10px;
@@ -141,39 +125,73 @@
   font-weight: 400;
   font-size: 19px;
   line-height: 28px;
-  color: #ffffff;
-  background-color: rgba(243, 243, 243, 0.6);
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 1);
+  outline: none;
 }
+
+.hes-input option {
+  color: #000;
+}
+.hes-input::placeholder {
+  color: #fff; /* İstenilen renk değeri */
+}
+
 .hes-little-imgs {
-  position: relative;
-  right: 45px;
   display: flex;
-  padding-top: 40px;
+  padding-top: 5px;
+  align-items: center;
+  padding-left: 15px;
+  width: fit-content;
 }
+
 .hes-little-imgs h6 {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: clamp(6px, 1vw, 12px);
   line-height: 35px;
   color: rgba(255, 255, 255, 1);
-  margin-left: 40px;
-  position: absolute;
-  left: 225px;
+  margin-left: 15px;
 }
-.hes-little-imgs img {
-  position: absolute;
+.hes-avatar-emty {
+  border: 3px solid #fff;
+  background-color: rgba(223, 105, 81, 1);
+  border-radius: 50%;
 }
-
 .hes-scroll-png {
   position: absolute;
-  top: 800px;
+  bottom: 0;
   left: 25px;
+  transform: translateY(50%);
 }
-.hes-little-lines {
-  position: absolute;
-  top: 900px;
+.hes-hamburger-menu {
+  display: none;
 }
-
+@media (max-width: 1000px) {
+  .hes-navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hes-hamburger-menu {
+    display: block;
+    text-align: center;
+  }
+  .hes-select-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hes-select-box button {
+    width: 100%;
+  }
+  .hes-select-box img {
+    display: none;
+  }
+  .hes-title-box {
+    gap: 10px;
+    padding-left: 35px;
+  }
+}
 .homepage-best-services {
   display: flex;
   justify-content: center;
