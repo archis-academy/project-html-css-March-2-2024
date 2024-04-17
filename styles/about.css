@@ -1,25 +1,49 @@
+.about-tour-plans-section{
+    position: relative;
+}
 .about-tour-plans{
-   
     width: 1920px;
     height: 556px;
     margin-top: 2287px;
 }
 .about-trend-img{
-    margin-left: 208px;
+    margin-left: 80px;
+    width: 645px;
+    height: 556px;
     float: left;
 }
-.trend{
-    float: left;
-    width: 580px;
-    height:auto;
-    padding-top: 140px;
-    padding-left: 200px;
-    font-size:18px;
+.trend-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    padding-top: 100px;
+    padding-left: 100px;
+ 
+}
+.trend-container-title{
+    color: #DF6951;
+    font-size: 18px;
+    font-weight: 700;
+}
+.trend-container-header{
+    font-size: 50px;
+    font-weight: 700;
+}
+.trend-container-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
 }
 .group{
-    float: left;
-    padding-top: 80px;
-    padding-right: 60px;
-    margin-left: 110px;
-    
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.trend-shell{
+    width: 340px;
+    height: 255px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
 }
