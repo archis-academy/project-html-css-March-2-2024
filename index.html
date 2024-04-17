@@ -26,52 +26,50 @@
     <div class="homepage-hero-section">
       <div class="hero-section">
         <div class="hero-section-container">
-          <img class="hes-header-logo" src="images/logo.png" alt="" />
+          <div class="hes-header-logo">
+            <img src="images/logo.png" alt="" />
+          </div>
           <ul class="hes-navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
             <li>
-              <a href="#"
-                >Services <i class="fa-solid fa-caret-down"></i>
-                <div class="hes-dropdown-menu">
-                  <img src="images/popup-cloud.png" alt="" />
-                  <ul>
-                    <li><a href="#">Honeymoon Packages</a></li>
-                    <li><a href="#">Tours Packages</a></li>
-                    <li><a href="#">Musical Events</a></li>
-                    <li><a href="#">Build Package</a></li>
-                  </ul>
-                </div>
-              </a>
+              <a href="Services"
+                >Services <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <div class="hes-dropdown-menu">
+                <img src="images/popup-cloud.png" alt="" />
+                <ul>
+                  <li><a href="#">Honeymoon Packages</a></li>
+                  <li><a href="#">Tours Packages</a></li>
+                  <li><a href="#">Musical Events</a></li>
+                  <li><a href="#">Build Package</a></li>
+                </ul>
+              </div>
             </li>
-            <li><a href="">Upcomming Packages</a></li>
+            <li><a href="#">Upcomming Packages</a></li>
           </ul>
-          <button class="hes-button">Get in Touch</button>
+          <a href="#" class="hes-action-btn">Get in Touch</a>
+          <div class="hes-toggle-btn"><i class="fa-solid fa-bars"></i></div>
         </div>
         <div class="hes-hamburger-menu">
-          <ul >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Upcomming Packages</a></li>
-            <li>
-              <a href="#"
-                >Services <i class="fa-solid fa-caret-down"></i>
-                <div class="hes-drop-menu">
-                  <img src="images/popup-cloud.png" alt="" />
-                  <ul>
-                    <li><a href="#">Honeymoon Packages</a></li>
-                    <li><a href="#">Tours Packages</a></li>
-                    <li><a href="#">Musical Events</a></li>
-                    <li><a href="#">Build Package</a></li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            
-          </ul>
+          <li><a href="Home">Home</a></li>
+          <li><a href="About">About</a></li>
+          <li>
+            <a href="Services"
+              >Services <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="hes-dropdown-menu">
+              <ul>
+                <li><a href="#">Honeymoon Packages</a></li>
+                <li><a href="#">Tours Packages</a></li>
+                <li><a href="#">Musical Events</a></li>
+                <li><a href="#">Build Package</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Upcomming Packages</a></li>
+          <li><a href="#" class="hes-action-btn">Get in Touch</a></li>
         </div>
-        
-      </div>
         <div class="hes-title-box">
           <div style="width: fit-content">
             <img src="images/Vector-1.png" alt="" />
@@ -138,6 +136,20 @@
           <img src="images/scroll.png" alt="" />
         </div>
       </div>
+      <script>
+        const toggleBtn = document.querySelector(".hes-toggle-btn");
+        const toggleBtnIcon = document.querySelector(".hes-toggle-btn i");
+        const hamBurgerMenu = document.querySelector(".hes-hamburger-menu");
+
+        toggleBtn.onclick = function () {
+          hamBurgerMenu.classList.toggle("open");
+          const isOpen = hamBurgerMenu.classList.contains("open");
+
+          toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
     </div>
     <!-- Erkin Hero Section END-->
     <!-- Esra Best Servicess Start-->

@@ -5,9 +5,7 @@
   background-position: center;
 }
 .hero-section {
-  justify-content: center;
-  flex-wrap: wrap;
-  flex: 1;
+  padding: 0 2rem;
 }
 .hero-section-container {
   display: flex;
@@ -17,57 +15,27 @@
   margin: auto;
   padding-top: 66px;
 }
-
-.hes-navbar a,
-.hes-hamburger-menu a {
+.hes-navbar {
+  display: flex;
+  gap: 2rem;
+}
+.hes-navbar li {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: 500;
   line-height: 21px;
   color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-  position: relative;
 }
-.hes-hamburger-menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 1px;
-  background-color: #000;
-  transition: width 0.3s ease;
+.hes-navbar li:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(223, 105, 81, 1);
+  text-decoration-thickness: 3px;
 }
-.hes-hamburger-menu a:hover::after {
-  width: 100%;
-  height: 3px;
-  border-radius: 34px;
-  background-color: rgba(223, 105, 81, 1);
+.hes-hamburger-menu li:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(223, 105, 81, 1);
+  text-decoration-thickness: 3px;
 }
-.hes-navbar a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 1px;
-  background-color: #000;
-  transition: width 0.3s ease;
-}
-.hes-navbar a:hover::after {
-  width: 100%;
-  height: 3px;
-  border-radius: 34px;
-  background-color: rgba(223, 105, 81, 1);
-}
-.hes-navbar {
-  display: flex;
-  gap: 40px;
-}
-.hes-navbar li {
-  display: inline-block;
-}
-
 .hes-dropdown-menu {
   position: absolute;
   display: none;
@@ -78,6 +46,7 @@
   left: 10px;
   display: block;
 }
+
 .hes-dropdown-menu li {
   margin: 5px;
 }
@@ -86,11 +55,7 @@
   display: block;
 }
 
-.hes-hamburger-menu li:hover .hes-drop-menu {
-  display: block;
-}
-
-.hes-button {
+.hes-action-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 15px 25px;
@@ -99,7 +64,44 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  outline: none;
 }
+.hes-action-btn:hover {
+  scale: 1.05;
+}
+.hes-toggle-btn {
+  color: rgba(223, 105, 81, 1);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.hes-hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hes-hamburger-menu.open {
+  height: 240px;
+}
+.hes-hamburger-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hes-hamburger-menu .hes-action-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .hes-title-box {
   max-width: 1350px;
   margin: auto;
@@ -149,6 +151,7 @@
   background: transparent;
   color: rgba(255, 255, 255, 1);
   outline: none;
+  -webkit-border-radius: 1px;
 }
 
 .hes-input option {
@@ -185,29 +188,17 @@
   left: 25px;
   transform: translateY(50%);
 }
-.hes-hamburger-menu {
-  display: none;
-}
-@media (max-width: 1000px) {
-  .hero-section-container button {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(-50%);
-  }
-  .hes-hamburger-menu {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    line-height: 2;
-  }
-  .hes-navbar {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 880px) {
+  .hes-navbar,
+  .hes-action-btn {
     display: none;
   }
-
+  .hes-toggle-btn {
+    display: block;
+  }
+  .hes-hamburger-menu {
+    display: block;
+  }
   .hes-select-box {
     flex-direction: column;
     align-items: flex-start;
@@ -222,11 +213,17 @@
   .hes-title-box {
     gap: 10px;
     padding-left: 25%;
-  }
-  .hes-drop-menu {
-    display: none;
+    padding-top: 275px;
   }
 }
+
+@media (max-width: 550px) {
+  .hes-hamburger-menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
 .homepage-best-services {
   display: flex;
   justify-content: center;
