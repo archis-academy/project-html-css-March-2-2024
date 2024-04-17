@@ -1,0 +1,24 @@
+.about-tour-plans{
+    background-color: bisque;
+    width: 1920px;
+    height: 556px;
+    margin-top: 2287px;
+}
+.about-trend-img{
+    margin-left: 208px;
+    float: left;
+}
+.trend{
+    float: left;
+    width: 580px;
+    height:auto;
+    padding-top: 140px;
+    padding-left: 200px;
+    font-size:18px;
+}
+.group{
+    float: left;
+    padding-top: 80px;
+    padding-right: 60px;
+    margin-left: 110px;
+}
