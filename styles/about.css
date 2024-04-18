@@ -21,22 +21,23 @@
  
  .about-explore-packages-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 363px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 363px));
     gap: 50px;
     padding: 0 20px;
     justify-content: center;
     }
 .about-city-box {
-    width: 363px;
     position: relative;
     }
+.about-ep-image{
+    width: 100%;
+    height: 100%;
+}
 .about-city-text {
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 289px;
-    height: 33px;
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
@@ -44,7 +45,8 @@
     font-weight: 600;
     line-height: normal;
     bottom: 24px;
-    left: 37px;
+    left: 23px;
+    right: 23px;
         }
 .span-image {
     grid-row: auto / span 2;
