@@ -402,6 +402,9 @@
 .tp-box{
   text-align: left;
 }
+.tp-box-image{
+  width: 100%;
+}
 .tp-box-images {
   position: relative;
   margin: 50px 0 30px 0;
