@@ -1,49 +1,53 @@
 .about-tour-plans-section{
-    position: relative;
+    display: flex;
+    justify-content: center;
+  
 }
 .about-tour-plans{
-    width: 1920px;
-    height: 556px;
-    margin-top: 2287px;
+    display: flex;
 }
-.about-trend-img{
-    margin-left: 80px;
-    width: 645px;
-    height: 556px;
-    float: left;
+.trend-shell{
+    position: absolute;
+    right: 0;
 }
-.trend-container{
+.about-trend-img-container{
+    display: flex;
+    max-width: 556px;
+}
+.about-trend-img-container > img{
+ width:100%;
+}
+.about-tour-plans{
+    display: flex;
+    max-width: 1350px;
+    justify-content: space-between;
+    flex: 1;
+}
+.text-and-img{
     display: flex;
     flex-direction: column;
-    max-width: 620px;
-    padding-top: 100px;
-    padding-left: 100px;
- 
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
-.trend-container-title{
-    color: #DF6951;
-    font-size: 18px;
-    font-weight: 700;
-}
-.trend-container-header{
-    font-size: 50px;
-    font-weight: 700;
-}
-.trend-container-description{
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 15px;
+.trend-container{
+    max-width: 579px;
 }
 .group{
     display: flex;
-    gap: 20px;
-    padding-top: 100px;
-    padding-left: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
-.trend-shell{
-    width: 340px;
-    height: 255px;
-    position: absolute;
-    right: 100px;
-    top: 100px;
+.group p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-style: bold;
+}
+.trend-container h2{
+    color: #DF6951;
+}
+.trend-container h3{
+   font-size: 55px;
 }
