@@ -1,43 +1,112 @@
 .about-page-hero {
-
+    /* display: flex; */
+    background-image: url('../images/about/about-header-img.png');
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;
+    /* width: 1920px; */
+    /* height: 766px; */
+    height: 100vh;
 }
 
 .hero-container {
-
+    /* max-width: 1350px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex: 1;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 1);
 }
 
 .h-top-nav-bar {
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;          
+    align-items: center;
+    /* position: fixed; */
 }
 
 .tnb-logo {
-
+    max-width: 126.6px;
+    max-height: 64.18px;
 }
 
 .tnb-nav-bar {
-
+    width: 882px;
+    height: 58px; 
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    font-family: Circular, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21.5px;
 }
 
-.tnb-nav-bar li {
+/* .h-top-nav-bar ul {
+    list-style: none;
+    overflow: hidden;
+} */
 
+.nb-nav-elements {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
 }
 
-.tnb-nav-bar li a {
-
+.nb-nav-elements li {
+    font-family: Circular, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21.5px;
 }
 
-.tnb-get-in-touch {
+.nb-nav-elements li:hover {
+    text-decoration: underline;
+    text-decoration-color:  rgba(223, 105, 81, 1);
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+
+.nb-nav-elements li a {
+    display: block;
+}
+
+.nb-nav-elements li a:hover {
+    
+}
+
+.nb-button {
+    padding: 15px 25px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(223, 105, 81, 1);
+    border-radius: 7px;
+    /* cursor: pointer; */
+    float: right;
 
 }
 
 .h-middle-script {
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ms-read {
-
+    /* max-width: 54px; */
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.1em;
 }
 
 .ms-about-us {
-    
+    font-family: Yesteryear;
+    font-size: 157.43px;
+    font-weight: 400;
+    line-height: 223.68px;
 }
