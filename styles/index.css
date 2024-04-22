@@ -1,3 +1,37 @@
+.ps-slide-image {
+  height: 50px;
+  opacity: 0.4;
+  padding: 0 55px;
+  filter: alpha(opacity=40);
+  filter: grayscale(100%);
+}
+
+.ps-logo {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+.homepage-partners-section {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  height: 100px;
+}
+.homepage-partners-section-container {
+  overflow: hidden;
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+
 .homepage-best-services {
   display: flex;
   justify-content: center;
@@ -171,6 +205,11 @@
   display: flex;
   justify-content: center;
 }
+.homepage-favorite-resorts {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
 
 .favorite-resorts-container {
   display: flex;
@@ -333,5 +372,301 @@
   }
   .es-signatures {
     width: 250px;
+  }
+}
+
+.homepage-tour-package-container {
+  text-align: center;
+  margin: 150px 20px;
+}
+.tp-h5 {
+  color: #df6951;
+  font-size: 18px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+.tp-h2 {
+  color: #181e4b;
+  font-family: "Volkhov", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 71px;
+}
+.homepage-tour-package-container-box {
+  display: grid;
+  max-width: 1500px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  gap: 100px;
+  margin: auto;
+  justify-content: center;
+}
+.tp-box {
+  text-align: left;
+}
+.tp-box-image {
+  width: 100%;
+}
+.tp-box-images {
+  position: relative;
+  margin: 50px 0 30px 0;
+}
+.tp-box-flag {
+  position: absolute;
+  left: 10px;
+  bottom: -75px;
+}
+.tp-spans-box {
+  display: flex;
+  gap: 35px;
+}
+.tp-box-spans {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  padding-bottom: 10px;
+}
+.tp-box-spans p {
+  font-size: 17px;
+  color: #7d7d7d;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.tp-box-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.tp-box-title h4 {
+  color: #2f2f2f;
+  font-size: 29px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+.tp-box-spans {
+  display: flex;
+}
+.tp-box-spans-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tp-box-pricings {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.tp-box-pricings h4 {
+  color: #df6951;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.tp-box-pricings h5 {
+  color: #7d7d7d;
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.tp-box-p {
+  color: black;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24.5px;
+  letter-spacing: 0.61px;
+  padding-bottom: 25px;
+}
+.tp-box-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #df6951;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 17px;
+}
+
+.homepage-testimonials {
+  padding: 0px 20px 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 75px;
+  z-index: 0;
+}
+
+.testimonials-container {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tc-testimonial-section {
+  max-width: 639px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.ts-title-box {
+  max-width: 639px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tb-subheading {
+  max-width: 126px;
+  font-family: Poppins;
+  font-size: clamp(10px, 2vw, 18px);
+  font-weight: 700;
+  line-height: clamp(18px, 4vw, 27px);
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(223, 105, 81, 1);
+}
+
+.tb-heading {
+  font-family: Volkhov;
+  font-size: clamp(30px, 4vw, 50px);
+  font-weight: 700;
+  line-height: clamp(40px, 4vw, 71.04px);
+  text-align: center;
+  color: rgba(24, 30, 75, 1);
+}
+
+.ts-script-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  position: relative;
+}
+
+.sb-designer-image {
+  position: absolute;
+  top: -25%;
+  z-index: 1;
+}
+
+.sb-writing-box {
+  background-color: rgb(255, 255, 255);
+  padding: 85px 70px 30px 70px;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.wb-double-quotes {
+  position: absolute;
+  top: 16%;
+  left: 7.5%;
+}
+
+.wb-paragraph {
+  max-width: 393px;
+  font-family: Poppins;
+  font-size: clamp(8px, 4vw, 12.22px);
+  font-weight: 400;
+  line-height: clamp(18px, 4vw, 24.45px);
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.wb-small-quotes {
+  position: absolute;
+  bottom: 27%;
+  right: 38%;
+}
+
+.wb-footer {
+  max-width: 197px;
+  font-family: Poppins;
+  font-size: clamp(6px, 4vw, 12.22px);
+  font-weight: 700;
+  line-height: clamp(16px, 4vw, 24.45px);
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.sb-left-arrow {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%, -15%);
+}
+
+.sb-right-arrow {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(50%, -15%);
+}
+
+.tc-hat-image {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+.tc-seashell-image {
+  position: absolute;
+  left: 10%;
+  top: -13%;
+  z-index: -1;
+}
+
+.tc-place-image {
+  position: absolute;
+  right: 5%;
+  top: -15%;
+  z-index: -1;
+}
+
+@media (max-width: 750px) {
+  .tc-hat-image,
+  .tc-seashell-image,
+  .tc-place-image,
+  .sb-left-arrow,
+  .sb-right-arrow {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 625px) {
+  .sb-left-arrow,
+  .sb-right-arrow,
+  .wb-small-quotes {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .sb-designer-image {
+    max-width: 135px;
+  }
+
+  .sb-writing-box {
+    padding: 60px 30px 15px 30px;
+    height: 185px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
