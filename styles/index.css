@@ -20,7 +20,7 @@
   left: 0;
 }
 .hes-hero {
-  max-width: 65rem;
+  max-width: 90rem;
   padding: 0 2rem;
   position: relative;
   margin: 0 auto;
@@ -30,10 +30,12 @@
   flex: 1;
   display: flex;
   align-items: center;
+  max-width: 127px;
 }
 .hes-nav {
   display: flex;
   flex: 3;
+  align-items: center;
 }
 .hes-links {
   flex: 2;
@@ -43,6 +45,9 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+}
+.hes-action-btn:hover {
+  scale: 1.05;
 }
 .hes-btn {
   display: inline-block;
@@ -250,8 +255,12 @@
   background: transparent;
   color: rgba(255, 255, 255, 1);
   outline: none;
+  max-width: 133px;
 }
-
+.hes-place {
+  max-width: max-content;
+  padding-left: 5px;
+}
 .hes-input option {
   color: #000;
 }
@@ -265,6 +274,7 @@
   align-items: center;
   padding-left: 15px;
   width: fit-content;
+  flex-wrap: wrap;
 }
 
 .hes-little-imgs h6 {
@@ -282,9 +292,13 @@
 }
 .hes-scroll-png {
   position: absolute;
+  max-width: 400px;
   bottom: 0;
   left: 25px;
   transform: translateY(50%);
+}
+.hes-scroll-png img {
+  width: 100%;
 }
 @media (max-width: 880px) {
   .hes-hamburger-menu-container {
@@ -398,8 +412,11 @@
   }
   .hes-title-box {
     gap: 10px;
-    padding-left: 25%;
-    padding-top: 275px;
+    padding-left: 20px;
+    padding-top: 75%;
+  }
+  .hes-action-btn:hover {
+    scale: none;
   }
 }
 
