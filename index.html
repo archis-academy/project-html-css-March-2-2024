@@ -24,132 +24,131 @@
   <body>
     <!--Erkin Hero Section START-->
     <div class="homepage-hero-section">
-      <div class="hero-section">
-        <div class="hero-section-container">
+      <header class="hero-section">
+        <div class="hes-hero">
+          <input type="checkbox" name="" id="hes-check" />
           <div class="hes-header-logo">
             <img src="images/logo.png" alt="" />
           </div>
-          <ul class="hes-navbar">
-            <li><a href="Home">Home</a></li>
-            <li><a href="About">About</a></li>
-            <li>
-              <a href="Services"
-                >Services <i class="fa-solid fa-caret-down"></i
-              ></a>
-              <div class="hes-dropdown-menu">
-                <img src="images/popup-cloud.png" alt="" />
-                <ul>
-                  <li><a href="#">Honeymoon Packages</a></li>
-                  <li><a href="#">Tours Packages</a></li>
-                  <li><a href="#">Musical Events</a></li>
-                  <li><a href="#">Build Package</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Upcomming Packages</a></li>
-          </ul>
-          <a href="#" class="hes-action-btn">Get in Touch</a>
-          <div class="hes-toggle-btn"><i class="fa-solid fa-bars"></i></div>
-        </div>
-        <div class="hes-hamburger-menu">
-          <li><a href="Home">Home</a></li>
-          <li><a href="About">About</a></li>
-          <li>
-            <a href="Services"
-              >Services <i class="fa-solid fa-caret-down"></i
-            ></a>
-            <div class="hes-dropdown-menu">
+
+          <div class="hes-nav">
+            <div class="hes-links">
               <ul>
-                <li><a href="#">Honeymoon Packages</a></li>
-                <li><a href="#">Tours Packages</a></li>
-                <li><a href="#">Musical Events</a></li>
-                <li><a href="#">Build Package</a></li>
+                <li class="hes-link" style="--i: 0.6s">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="hes-link" style="--i: 0.85s">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="hes-link" style="--i: 1.1s">
+                  <a href="Services"
+                    >Services <i class="fa-solid fa-caret-down"></i
+                  ></a>
+                  <div class="hes-dropdown">
+                    <ul>
+                      <li class="hes-dropdown-link">
+                        <a href="#">Honeymoon Packages</a>
+                      </li>
+                      <li class="hes-dropdown-link">
+                        <a href="#">Tours Packages</a>
+                      </li>
+                      <li class="hes-dropdown-link">
+                        <a href="#">Musical Events</a>
+                      </li>
+                      <li class="hes-dropdown-link">
+                        <a href="#">Build Package</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hes-link" style="--i: 1.35s">
+                  <a href="#">Upcomming Packages</a>
+                </li>
               </ul>
             </div>
-          </li>
-          <li><a href="#">Upcomming Packages</a></li>
-          <li><a href="#" class="hes-action-btn">Get in Touch</a></li>
-        </div>
-        <div class="hes-title-box">
-          <div style="width: fit-content">
-            <img src="images/Vector-1.png" alt="" />
-          </div>
-          <h2>No matter where you're going to, we'll take you there</h2>
-          <div class="hes-select-box">
-            <input class="hes-input" type="text" placeholder="Where to?" />
-            <img src="images/line.png" alt="" />
-            <select class="hes-input">
-              <option value="">Travel Type</option>
-              <option value="Honeymoon Vacation">Honeymoon Vacation</option>
-              <option value="Musical Events">Musical Events</option>
-            </select>
-            <img src="images/line001.png" alt="" />
-            <select class="hes-input">
-              <option value="">Duration</option>
-              <option value="One Day">One Day</option>
-              <option value="Two Day">Two Day</option>
-            </select>
-            <button><a href="">Submit</a></button>
-          </div>
-          <div class="hes-little-imgs">
-            <img
-              style="margin-left: -12px"
-              src="images/user-avatar2.png"
-              alt=""
-            />
-            <img
-              style="margin-left: -12px"
-              src="images/user-avatar3.png"
-              alt=""
-            />
-            <img
-              style="margin-left: -12px"
-              src="images/user-avatar4.png"
-              alt=""
-            />
-            <img
-              style="margin-left: -12px"
-              src="images/user-avatar1.png"
-              alt=""
-            />
-            <img
-              style="margin-left: -12px"
-              src="images/user-avatar5.png"
-              alt=""
-            />
-            <img
-              style="margin-left: -12px"
-              src="images/user-avatar6.png"
-              alt=""
-            />
-            <div style="margin-left: -12px" class="hes-avatar-emty">
-              <img
-                style="padding: 15px; display: flex"
-                src="images/plus.png"
-                alt=""
-              />
+
+            <div class="hes-action-btn" style="--i: 1.8s">
+              <a href="#" class="hes-btn">Get in Touch</a>
             </div>
-            <h6>2,500 people booked Tomorrowland Event in last 24 Hours</h6>
+          </div>
+
+          <div class="hes-hamburger-menu-container">
+            <div class="hes-hamburger-menu">
+              <div></div>
+            </div>
           </div>
         </div>
-        <div class="hes-scroll-png">
-          <img src="images/scroll.png" alt="" />
+      </header>
+      <main class="hero-section-container">
+        <section class="hes-sec">
+          <div class="hes-overlay"></div>
+        </section>
+      </main>
+      <div class="hes-title-box">
+        <div style="width: fit-content">
+          <img src="images/Vector-1.png" alt="" />
+        </div>
+        <h2>No matter where you're going to, we'll take you there</h2>
+        <div class="hes-select-box">
+          <input class="hes-input" type="text" placeholder="Where to?" />
+          <img src="images/line.png" alt="" />
+          <select class="hes-input">
+            <option value="">Travel Type</option>
+            <option value="Honeymoon Vacation">Honeymoon Vacation</option>
+            <option value="Musical Events">Musical Events</option>
+          </select>
+          <img src="images/line001.png" alt="" />
+          <select class="hes-input">
+            <option value="">Duration</option>
+            <option value="One Day">One Day</option>
+            <option value="Two Day">Two Day</option>
+          </select>
+          <button><a href="">Submit</a></button>
+        </div>
+        <div class="hes-little-imgs">
+          <img
+            style="margin-left: -12px"
+            src="images/user-avatar2.png"
+            alt=""
+          />
+          <img
+            style="margin-left: -12px"
+            src="images/user-avatar3.png"
+            alt=""
+          />
+          <img
+            style="margin-left: -12px"
+            src="images/user-avatar4.png"
+            alt=""
+          />
+          <img
+            style="margin-left: -12px"
+            src="images/user-avatar1.png"
+            alt=""
+          />
+          <img
+            style="margin-left: -12px"
+            src="images/user-avatar5.png"
+            alt=""
+          />
+          <img
+            style="margin-left: -12px"
+            src="images/user-avatar6.png"
+            alt=""
+          />
+          <div style="margin-left: -12px" class="hes-avatar-emty">
+            <img
+              style="padding: 15px; display: flex"
+              src="images/plus.png"
+              alt=""
+            />
+          </div>
+          <h6>2,500 people booked Tomorrowland Event in last 24 Hours</h6>
         </div>
       </div>
-      <script>
-        const toggleBtn = document.querySelector(".hes-toggle-btn");
-        const toggleBtnIcon = document.querySelector(".hes-toggle-btn i");
-        const hamBurgerMenu = document.querySelector(".hes-hamburger-menu");
-
-        toggleBtn.onclick = function () {
-          hamBurgerMenu.classList.toggle("open");
-          const isOpen = hamBurgerMenu.classList.contains("open");
-
-          toggleBtnIcon.classList = isOpen
-            ? "fa-solid fa-xmark"
-            : "fa-solid fa-bars";
-        };
-      </script>
+      <div class="hes-scroll-png">
+        <img src="images/scroll.png" alt="" />
+      </div>
     </div>
     <!-- Erkin Hero Section END-->
     <!-- Esra Best Servicess Start-->
