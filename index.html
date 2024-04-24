@@ -154,6 +154,15 @@
         <img src="images/scroll.png" alt="" />
       </div>
     </div>
+    <script>
+      document
+        .getElementById("hes-check")
+        .addEventListener("change", function () {
+          document
+            .querySelector(".hes-title-box")
+            .classList.toggle("hes-none", this.checked);
+        });
+    </script>
     <!-- Erkin Hero Section END-->
     <!-- Esra Best Servicess Start-->
     <div class="homepage-best-services">

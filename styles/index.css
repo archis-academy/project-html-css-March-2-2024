@@ -20,7 +20,7 @@
   left: 0;
 }
 .hes-hero {
-  max-width: 90rem;
+  max-width: 1350px;
   padding: 0 2rem;
   position: relative;
   margin: 0 auto;
@@ -42,9 +42,6 @@
 }
 .hes-action-btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
 }
 .hes-action-btn:hover {
   scale: 1.05;
@@ -118,10 +115,10 @@
 .hes-dropdown-link:hover > a {
   background-color: rgba(223, 105, 81, 1);
 }
-.hes-dropdown-link:not(:nth-last-child(2)) {
+.hes-dropdown-link:not(:last-of-type) > a {
   border-bottom: 1px solid #efefef;
 }
-/* buradaki position gereksiz olabilir. sonra kontrol et */
+
 .hes-dropdown-link {
   position: relative;
 }
@@ -265,7 +262,7 @@
   color: #000;
 }
 .hes-input::placeholder {
-  color: #fff; /* İstenilen renk değeri */
+  color: #fff;
 }
 
 .hes-little-imgs {
@@ -300,6 +297,12 @@
 .hes-scroll-png img {
   width: 100%;
 }
+@media (max-width: 1500px) {
+  .hes-title-box {
+    gap: 10px;
+    padding-left: 20px;
+  }
+}
 @media (max-width: 880px) {
   .hes-hamburger-menu-container {
     display: flex;
@@ -308,17 +311,16 @@
     display: block;
   }
   .hes-nav {
-    position: fixed;
+    position: absolute;
     height: calc(100vh - 3rem);
     top: 3rem;
     left: 0;
     width: 100%;
-    background-color: rgba(217, 217, 217, 0.34);
+    background-color: rgba(0, 0, 0, 0.33);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     transform: translateX(100%);
     transition: 0.65s;
   }
@@ -413,10 +415,12 @@
   .hes-title-box {
     gap: 10px;
     padding-left: 20px;
-    padding-top: 75%;
   }
   .hes-action-btn:hover {
     scale: none;
+  }
+  .hes-none {
+    display: none;
   }
 }
 
