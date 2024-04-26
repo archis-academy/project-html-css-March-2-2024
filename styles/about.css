@@ -121,20 +121,22 @@
 .span-image {
   grid-row: auto / span 2;
 }
-.wanderlust-video-banner-container{
+.wanderlust-video-banner-container {
   position: relative;
 }
-.w-vide{
+.w-video {
+  margin: 0 auto;
   width: 100%;
+  display: block;
 }
 .w-video-title {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  font-family: "Yesterday", cursive;
-  font-size: clamp (75px, 10vw, 158px);
-  line-height: clamp (158px, 10vw, 224px);
-font-weight: 400;
-color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Yesteryear", cursive;
+  font-size: 100px;
+
+  font-weight: 400;
+  color: #ffff;
 }
