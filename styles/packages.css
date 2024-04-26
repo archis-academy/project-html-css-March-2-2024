@@ -1,3 +1,38 @@
+@media (max-width: 1400px) {
+    .tour-location {
+        padding: 0 20px;
+    }
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.location-page-container{
+    display: flex;
+    padding: 20px;
+}
+.location-navbar-box {
+    display: flex;
+    justify-content: center;
+    padding: 55px 0;
+    background: #f8f8f8;
+}
+.location-navbar > div > a {
+    font-size: 20px;
+    color: #343434;
+    font-family: "Poppins";
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.location-navbar > div > img {
+    padding: 0 15px;
+}
+.location-navbar {
+    height: 141px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
 .location-page-box{
     max-width: 780px;
     padding: 35px 28px;
@@ -26,7 +61,7 @@
     text-align: center;
     font-family: "Volkhov", sans-serif;
 }
-@media (max-width: 1275px) {
+@media (max-width: 1500px) {
     .location-form {
         background-color: rgba(237, 237, 237, 0.7);
         max-width: 750px;
@@ -41,7 +76,6 @@
     line-height: 26px;
     padding-bottom: 30px;
 }
-
 .form-box-input {
     padding: 25px 15px;
     border: none;
@@ -50,4 +84,51 @@
     line-height: 26px;
     font-weight: 400;
     outline: none;
+}
+.form-input-box {
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.form-input-box > div {
+    background-color: #fff;
+    width: 359px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1500px) {
+    .form-input-box > div {
+        width: 300px;
+    }
+}
+.form-box-btn {
+    width: 176.5px;
+    padding: 16px 0;
+    background-color: #df6951;
+    border-radius: 10px;
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.form-buttons-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.location-img-1 {
+    position: absolute;
+    right: 0;
+    bottom: -1000px;
+    z-index: -1;
+}
+.location-img-2 {
+    position: absolute;
+    left: 0;
+    bottom: -1000px;
+    z-index: -1;
 }
