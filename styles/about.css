@@ -41,19 +41,75 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nb-nav-elements li:hover {
-    text-decoration: underline;
+    border-bottom: 3px solid #df6951;
     text-decoration-color:  rgba(223, 105, 81, 1);
     text-decoration-thickness: 2px;
     cursor: pointer;
+    /* transition: 0.1s; */
 }
 
-/* .nb-nav-elements li a:hover {
-    
-} */
+.ne-about {
+    border-bottom: 3px solid #df6951;
+}
+
+.ne-dropdown-services {
+    position: relative;
+    display: inline-block;
+}
+
+.ne-dropdown-services:hover .ds-dropdown-menu {
+    display: block;
+}
+
+.ne-dropdown-services:hover .ne-services {
+    background-color: darkgoldenrod;
+}
+
+.ne-dropdown-services li a {
+    text-decoration: none;
+    display: block;
+}
+
+.ne-dropdown-services li a:hover {
+    background-color: lightgrey;
+}
+
+.ne-dropdown-services li a i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+.ds-dropdown-menu {
+    display: none;
+    position: absolute;
+    padding: 10px 0px;
+    left: 0px;
+    top: 100%;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.ds-dropdown-menu li {
+    background-color: gray;
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+
+.ds-dropdown-menu:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom: 10px solid transparent;
+    border-color: gray;
+}
 
 .nb-button {
     padding: 15px 25px;
@@ -71,7 +127,6 @@
 }
 
 .ms-read {
-    /* max-width: 54px; */
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
