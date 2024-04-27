@@ -1,66 +1,47 @@
+
 .about-page-hero {
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: url('../images/about/about-header-img.png');
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
     background-size: cover;
-    /* width: 1920px; */
-    /* height: 766px; */
     height: 100vh;
 }
 
 .hero-container {
-    /* max-width: 1350px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
     flex: 1;
-    flex-wrap: wrap;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1); 
 }
 
 .h-top-nav-bar {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;          
-    align-items: center;
-    /* position: fixed; */
+    align-items: flex-start;
+    gap: 50px;
+    margin: 75px;
 }
 
 .tnb-logo {
-    max-width: 126.6px;
-    max-height: 64.18px;
+    margin-right: 50px;
 }
 
 .tnb-nav-bar {
-    width: 882px;
-    height: 58px; 
+    width: 800px;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     font-family: Circular, sans-serif;
     font-size: 17px;
     font-weight: 500;
     line-height: 21.5px;
 }
-
-/* .h-top-nav-bar ul {
-    list-style: none;
-    overflow: hidden;
-} */
 
 .nb-nav-elements {
     display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.nb-nav-elements li {
-    font-family: Circular, sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 21.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .nb-nav-elements li:hover {
@@ -70,29 +51,23 @@
     cursor: pointer;
 }
 
-.nb-nav-elements li a {
-    display: block;
-}
-
-.nb-nav-elements li a:hover {
+/* .nb-nav-elements li a:hover {
     
-}
+} */
 
 .nb-button {
     padding: 15px 25px;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(223, 105, 81, 1);
     border-radius: 7px;
-    /* cursor: pointer; */
-    float: right;
-
+    border: none;
+    cursor: pointer;
 }
 
 .h-middle-script {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    margin: 175px auto;
+    color: rgba(255, 255, 255, 1); 
 }
 
 .ms-read {
@@ -100,7 +75,7 @@
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
-    line-height: 27px;
+    line-height:27px;
     letter-spacing: 0.1em;
 }
 
