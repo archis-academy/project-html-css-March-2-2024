@@ -1,7 +1,5 @@
 .about-page-hero {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     background-image: url("../images/about/about-header-img.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -14,19 +12,17 @@
 }
 
 .h-top-nav-bar {
+    max-width: 1350px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 60px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px auto 0px;
     color: rgba(255, 255, 255, 1);
-}
-
-.tnb-logo {
 }
 
 .tnb-nav-bar {
     display: flex;
-    justify-content: space-around;
     font-family: Poppins, sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -43,10 +39,18 @@
 
 .nb-nav-elements li:hover {
     border-bottom: 3px solid #df6951;
-    text-decoration-color: rgba(223, 105, 81, 1);
-    text-decoration-thickness: 2px;
     cursor: pointer;
-    /* transition: 0.1s; */
+    transition: 0.1s; 
+}
+
+.nb-nav-elements li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.80);
+    transition: all 0.4s;
+}
+
+.nb-nav-elements li a:hover {
+    color: rgba(223, 105, 81, 1);
 }
 
 .ne-about {
@@ -60,19 +64,9 @@
 
 .ne-dropdown-services:hover .ds-dropdown-menu {
     display: block;
-}
-
-.ne-dropdown-services:hover .ne-services {
-    /* background-color: darkgoldenrod; */
-}
-
-.ne-dropdown-services li a {
-    text-decoration: none;
-    display: block;
-}
-
-.ne-dropdown-services li a:hover {
-    /* background-color: lightgrey; */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    /* margin-top: 5px; */
 }
 
 .ne-dropdown-services li a i {
@@ -95,9 +89,12 @@
 }
 
 .ds-dropdown-menu li {
-    background-color: lightgray;
     padding: 5px 10px;
-    border-radius: 5px;
+}
+
+.ds-dropdown-menu li:hover {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .ds-dropdown-menu:before {
@@ -106,7 +103,6 @@
     top: 0px;
     left: 0px;
     border-bottom: 10px solid transparent;
-    border-color: gray;
 }
 
 .nb-button {
@@ -124,22 +120,88 @@
 }
 
 .h-middle-script {
-    text-align: center;
     margin: 195px auto;
+    text-align: center;
     color: rgba(255, 255, 255, 1);
 }
 
 .ms-read {
-    font-family: Poppins, sans-serif;;
-    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    font-size: clamp(16px, 3.14815px, 18px);
     font-weight: 700;
-    line-height: 27px;
+    line-height: clamp(27px, 3vw, 27px);
     letter-spacing: 0.1em;
 }
 
 .ms-about-us {
     font-family: Yesteryear, sans-serif;;
-    font-size: 157.43px;
+    font-size: clamp(120px, 40vw, 157.43px);
     font-weight: 400;
-    line-height: 223.68px;
+    line-height: clamp(125px, 40vw, 223.68px);
+}
+
+.hm-icon {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+.menu-icon {
+    display: none;
+    background-color: rgba(223, 105, 81, 1);
+    height: 3px;
+    width: 18px;
+    position: relative;
+}
+
+.menu-icon::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(223, 105, 81, 1);
+    height: 100%;
+    width: 100%;
+    top: 5px;
+}
+
+.menu-icon::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(223, 105, 81, 1);
+    height: 100%;
+    width: 100%;
+    top: -5px;
+}
+
+.hm-button {
+    display: none;
+}
+
+.hm-button:checked ~ .hm-icon .menu-icon {
+    background-color: transparent;
+}
+
+.hm-button:checked ~ .hm-icon .menu-icon:before {
+    transform: rotate(-45deg);
+    top: 0px;
+}
+
+.hm-button:checked ~ .hm-icon .menu-icon:after {
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+@media (max-width: 768px) {
+    .tnb-nav-bar {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .hm-button:checked ~ .tnb-nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }	
 }
