@@ -14,6 +14,11 @@
     />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -596,33 +601,33 @@
     <!-- Yasemin Homepage Footer Start-->
 
     <footer>
-      <div class="container">
+      <div class="footer-container">
         <div class="footer-main">
-          <div class="footer-column">
-            <img src="images/footer/Footer travel.jpg" width="90px" />
+          <div class="footer-column-one">
+            <img src="images/travel-logo.png" />
 
-            <p class="column-1">
-              <small>
-                Travel helps companies <br />
-                manage payments easily.
-              </small>
+            <p class="text-container">
+              Travel helps companies <br />
+              manage payments easily.
             </p>
-            <br />
-            <a href="#" class="social-icon"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="#" class="social-icon"
-              ><i class="fa-brands fa-facebook-messenger"></i
-            ></a>
-            <a href="#" class="social-icon"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="#" class="social-icon"
-              ><i class="fa-brands fa-facebook-meta"></i
-            ></a>
+
+            <div class="footer-icons">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook-messenger"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook-messenger"></i
+              ></a>
+            </div>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column-two">
             <h3 class="footer-heading">Company</h3>
             <a href="#" class="footer-link">About Us</a>
             <a href="#" class="footer-link">Careers</a>
@@ -630,7 +635,7 @@
             <a href="#" class="footer-link">Pricing</a>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column-three">
             <h3 class="footer-heading">Destinations</h3>
             <a href="#" class="footer-link">Maldives</a>
             <a href="#" class="footer-link">Los Angeles</a>
@@ -638,18 +643,20 @@
             <a href="#" class="footer-link">Toronto</a>
           </div>
 
-          <div class="footer-column">
+          <div class="footer-column-four">
             <h3 class="footer-heading">Join Our Newsletter</h3>
 
             <div class="footer-input">
-              <input type="text" placeholder="Your email adress" />
-              <div class="footer-button">
-                <button>Subscribe</button>
-              </div>
+              <input
+                class="footer-int"
+                type="text"
+                placeholder="Your email adress"
+              />
+
+              <button class="footer-btn">Subscribe</button>
             </div>
 
-            <br />
-            <p class="column-2">
+            <p class="column-four-text">
               . Will send you weekly updates for your better <br />
               tour packages.
             </p>
@@ -657,13 +664,14 @@
         </div>
       </div>
 
-      <hr />
+      <hr class="footer-line" />
 
       <div class="footer-copyright">
         <span class="copyright"
           >Copyright @ Xpro 2022. All Rights Reserved</span
         >
       </div>
+      <!-- <img class="footer-bg" src="images/footer-bg.png" alt="" /> -->
     </footer>
   </body>
 </html>
