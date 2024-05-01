@@ -705,6 +705,156 @@
   z-index: -1;
 }
 
+
+
+.footer-container{
+  padding:94px 0 44px;
+  position: relative;
+  height: 484px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.footer-main{
+  max-width: 1544px;
+  margin: 0 auto;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  font-family: "Manrope",sans-serif;
+  position: relative;
+}
+
+.footer-column-one{
+  display: flex;
+  flex-direction:column;
+}
+
+.text-container{
+  margin-bottom: 31px;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 28px;
+  color: #757095;
+}
+
+.footer-icons{
+display: flex;
+gap: 16px;
+}
+
+
+.fa-brands{
+  color: #df6951;
+  width: 20px;
+}
+
+.footer-column-two{
+  display: flex;
+  flex-direction: column;
+  
+} 
+
+.footer-heading{
+  margin-bottom: 24px;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 700px;
+  color: #181433;
+
+}
+
+.footer-link{
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 24px;
+  color:#181433 ;
+  margin-bottom: 18px;
+
+  
+}
+
+.footer-column-three{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.footer-column-four{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  display: flex;
+  margin-bottom: 21px;
+  color: #181433;
+
+}
+
+.footer-int{
+width: 250px;
+height: 52px;
+background: #EEEEFF;
+border: none;
+padding-left: 20px;
+}
+
+.footer-btn{
+  width: 149px;
+  height: 52px;
+  background: #df6951;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+}
+
+.column-four-text{
+  color: #181433;
+  opacity: 50%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footer-copyright{
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #181433;
+  margin-bottom: 44px;
+  margin-top: 40px;
+
+
+}
+
+.footer-line{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1544px;
+  width: 100%;
+  color: gray;
+  margin: 0 auto;
+}
+
+/*.footer-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 577px;
+  height: 484px;
+
+}*/
+
+
 @media (max-width: 750px) {
   .tc-hat-image,
   .tc-seashell-image,
@@ -735,3 +885,4 @@
     overflow-y: scroll;
   }
 }
+
