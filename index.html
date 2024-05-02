@@ -79,11 +79,6 @@
           </div>
         </div>
       </header>
-      <main class="hero-section-container">
-        <section class="hes-sec">
-          <div class="hes-overlay"></div>
-        </section>
-      </main>
       <div class="hes-title-box">
         <div style="width: fit-content">
           <img src="images/Vector-1.png" alt="" />
@@ -154,20 +149,7 @@
         <a href="#test"><img src="images/scroll.png" alt="" /></a>
       </div>
     </div>
-    <script>
-      document
-        .getElementById("hes-check")
-        .addEventListener("change", function () {
-          document
-            .querySelector(".hes-title-box")
-            .classList.toggle("hes-none", this.checked);
-          if (this.checked) {
-            document.body.style.overflow = "hidden";
-          } else {
-            document.body.style.overflow = "auto";
-          }
-        });
-    </script>
+
     <!-- Erkin Hero Section END-->
     <!-- Esra Best Servicess Start-->
     <div class="homepage-best-services">
@@ -314,7 +296,9 @@
         </div>
       </div>
     </div>
-    <div id="test"></div>
     <!-- erkin explore section END-->
+    <div id="test"></div>
+    <!--Bu div en aşağıda kalmalı-->
+    <script src="js/index.js"></script>
   </body>
 </html>
