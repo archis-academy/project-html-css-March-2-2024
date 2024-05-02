@@ -6,12 +6,6 @@
   overflow: hidden;
   position: relative;
 }
-.hero-section {
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  z-index: 1000;
-}
 
 .hes-title-box {
   max-width: 1350px;
