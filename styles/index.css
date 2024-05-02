@@ -315,6 +315,7 @@
 }
 .lb-title-box {
   width: 635px;
+  height: fit-content;
   transform: translate(-250px, 125px);
 }
 .lb-title {
@@ -333,7 +334,7 @@
     width: 100%;
     transform: none;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
   }
   .lb-signature {
     transform: none;
