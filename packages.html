@@ -13,24 +13,56 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="tour-location">
-      <div class="location-navbar container">
-        <div id="location-navbar-box0" class="location-navbar-box" style="background-color: rgb(248, 248, 248);">
+    <header class="package-location-hero">
+      <div class="hero-box container">
+        <nav id="hero-navbar" class="hero-nav container">
+          <img src="../images/logo.png" alt="Travel Logo">
+          <div class="nav-links-box">
+            <ul class="hero-nav-links">
+              <li class="hero-nav-link"><a href="/">Home</a></li>
+              <li class="hero-nav-link"><a href="/about/about">About</a></li>
+              <li class="hero-nav-link">
+                <div class="nav-link-dropdown">
+                  <a id="services-link" href="#">Services</a>
+                  <div id="drop-down-links" class="hero-nav-dropdown">
+                    <a href="#">Honeymoon Packages</a><br><br>
+                    <a href="#">Tours Packages</a><br><br>
+                    <a href="#">Musical Events</a><br><br>
+                    <a href="#">Build Package</a><br><br>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-nav-link"><a href="#">Upcomming Packages</a></li>
+            </ul>
+            <a onclick="increment()" id="contact-owerlay" class="contact-link" href="#">Get in Touch</a>
+          </div>
+          <img class="hamburger-icon" src="../images/hamburger-icon.png">
+        </nav>
+        <div class="location-heading-hero">
+          <h4 class="location-hero-h4">EXPLORE</h4>
+          <h1 class="location-hero-h1">Landscapes</h1>
+        </div>
+      </div>
+    </header>
+    <div class="package-location">
+      <div class="package-location-navbar container">
+        <div id="package-location-navbar-box0" class="package-location-navbar-box" style="background-color: rgb(248, 248, 248);">
           <img src="../images/location/location-info-logo.png" alt="">
           <a href="#">Information</a>
         </div>
-        <div id="location-navbar-box1" class="location-navbar-box" style="background-color: rgb(248, 248, 248);">
+        <div id="package-location-navbar-box1" class="package-location-navbar-box" style="background-color: rgb(248, 248, 248);">
           <img src="../images/location/locations_calender-logo.png" alt="">
           <a href="#">Tour Plan</a>
         </div>
-        <div id="location-navbar-box2" class="location-navbar-box" style="background-color: rgb(255, 255, 255);">
+        <div id="package-location-navbar-box2" class="package-location-navbar-box" style="background-color: rgb(255, 255, 255);">
           <img src="../images/location/icons_location.png" alt="">
           <a href="#">Location</a>
         </div>
-        <div id="location-navbar-box3" class="location-navbar-box" style="background-color: rgb(248, 248, 248);">
+        <div id="package-location-navbar-box3" class="package-location-navbar-box" style="background-color: rgb(248, 248, 248);">
           <img src="../images/location/location-gallery-logo.png" alt=""><a href="#">Gallery</a>
         </div>
       </div>
@@ -61,6 +93,7 @@
                   est culpa porro sed molestiae libero At blanditiis minima a
                   reiciendis fugiat.
               </p>
+              <img class="location-img-2" src="../images/location/tour-location-img002.png" alt="Travel">
           </div>
           <form class="location-form">
               <h2 class="form-box-h2">Book This Tour</h2>
@@ -92,7 +125,7 @@
                 </div>
                 <div>
                   <img class="form-textarea-img" src="../images/location/loca-input-masage.png" alt="">
-                  <textarea class="form-box-input" placeholder="Message" name="" id="" cols="30" rows="2"></textarea>
+                  <textarea class="form-box-input" placeholder="Message" name="" id="" cols="20" rows="2"></textarea>
                 </div>
               </div>
               <div class="form-buttons-box">
@@ -101,8 +134,53 @@
               </div>
             </form>
             <img class="location-img-1" src="../images/location/tour-location-img001.png" alt="Travel &amp; Tour">
-            <img class="location-img-2" src="../images/location/tour-location-img002.png" alt="Travel">
       </div>
   </div>
+  <div class="homepage-footer-body">
+    <div class="footer-group">
+      <div class="footer-group-171">
+        <img class="tarvel-logo" src="../images/homepage-footer/logo (1).png">
+        <p class="travel-text">
+          Travel helps companies manage payments easily.
+        </p>
+        <img class="travel-group-logo" src="../images/homepage-footer/Group 169 (1).png">
+      </div>
+      <div class="nav-list-item">
+        <div class="company-group">
+          <h5 class="company-h5">Company</h5>
+          <a href="#" class="About-text">About Us</a>
+          <a href="#" class="careers-text">Carees</a>
+          <a href="#" class="blog-text">Blog</a>
+          <a href="#" class="pricing-text">Pricing</a>
+        </div>
+      </div>
+      <div class="destinations-nav-list">
+        <div class="destination-group">
+          <h5 class="destinations-h5">Destinations</h5>
+          <a href="#" class="Maldives-text">Maldives</a>
+          <a href="#" class="Losangelas-text">Los Angelas</a>
+          <a href="#" class="Lasvegas-text">Las Vegas</a>
+          <a href="#" class="Torronto-text">Torronto</a>
+        </div>
+      </div>
+      <div class="right-list-item">
+        <h5 class="Newsletter-h5">Join Our Newsletter</h5>
+        <div class="email-button">
+          <input class="email-address" type="text" placeholder="Your email address">
+          <button class="subscribe">Subscribe</button>
+        </div>
+        <p class="right-list-text">
+          * Will send you weekly updates for your better<br>
+          tour packages.
+        </p>
+      </div>
+    </div>
+    <img class="footer-background" src="../images/homepage-footer/Footer img (2).png">
+    <div class="footer-page-line">
+      <hr>
+    </div>
+    <p class="copyright">Copyright @ Xpro 2022. All Rights Reserved.</p>
+  </div>
+  <script src="index.js"></script>
   </body>
   </html>
