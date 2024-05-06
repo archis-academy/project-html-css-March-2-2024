@@ -315,9 +315,9 @@
   height: 400px;
 }
 .lb-title-box {
-  width: 1350px;
+  max-width: 1350px;
+  flex: 1;
   height: fit-content;
-  padding-top: 50px;
   padding-left: 25px;
 }
 .lb-title {
@@ -328,21 +328,13 @@
   color: rgba(255, 255, 255, 1);
 }
 .lb-signature {
-  padding-left: 315px;
+  max-width: 1000px;
+  text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .lb-title-box {
-    width: 100%;
-    text-align: center;
-  }
-}
 @media (max-width: 1000px) {
   .homepage-liberty-banner {
     background-position-x: 75%;
-  }
-  .lb-signature {
-    padding-left: 0;
   }
   .lb-signature-img {
     width: 200px;
