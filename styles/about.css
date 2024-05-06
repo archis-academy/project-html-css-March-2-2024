@@ -99,7 +99,7 @@
     border-bottom: none;
 }
 
-.nb-nav-elements li button {
+.nb-button {
     font-family: Poppins, sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -112,10 +112,6 @@
     cursor: pointer;
     margin-left: 50px;
 }
-
-/* .nb-nav-elements li button:hover {
-    border-bottom: none;
-} */
 
 .h-middle-script {
     margin: 195px auto;
@@ -219,9 +215,5 @@
         flex-direction: column;
         align-items: center;
         transform: translateY(60%);
-    }
-
-    .hamburger-menu-button:checked ~ .ds-dropdown-menu {
-        
     }
 }
