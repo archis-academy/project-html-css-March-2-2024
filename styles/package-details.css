@@ -1,24 +1,46 @@
 .tp-container {
   max-width: 1350px;
-  margin: 0 auto;
+  margin: 100px auto;
   font-family: "Poppins", sans-serif;
   color: #181e4b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .tp-bottom-container {
   display: flex;
 }
+
 .tp-details-container {
   padding: 40px;
   width: 60%;
 }
+
 .tp-details-title {
   font-family: "Volkhov", sans-serif;
   font-size: 30px;
 }
+
 .tp-detail {
   display: flex;
   gap: 18px;
+  margin-top: 30px;
 }
+
+.tp-detail-left {
+  /* border: 2px solid green; */
+  position: relative;
+}
+
+.tp-detail-left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px dashed #df6951;
+  height: 115%;
+  z-index: -1;
+}
+
 .tp-detail-number {
   display: block;
   background-color: #df6951;
@@ -28,11 +50,27 @@
   padding: 8px 12px;
   border-radius: 6px;
 }
+
 .tp-detail-title {
   font-size: 20px;
   font-weight: 700;
 }
+
 .tp-detail-description {
   line-height: 24px;
   margin: 10px 0;
+}
+
+.tp-detail-list {
+  padding-left: 20px;
+}
+
+.tp-detail-item {
+  list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+  .tp-bottom-container {
+    flex-direction: column;
+  }
 }
