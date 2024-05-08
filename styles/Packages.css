@@ -1,0 +1,197 @@
+.Packages-img{
+    background-image: url("/images/location/tour-location-homepage.png");
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Packages-img-text{
+    color: #fff;
+    padding: 11% 35%;
+    text-align: center;
+}
+.explore{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+}
+.landscape{
+    font-family: "Yesteryear", cursive;
+    font-size: 160px;
+    line-height: 225px;
+}
+.Packages-Body-Container{
+    position: relative;
+    margin: auto;
+    top: -70px;
+    max-width: 1350px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.Packages-nav-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: #f8f8f8;
+}
+.Packages-nav-links:active{
+    background-color: darkblue;
+}
+.Packages-Information-About{
+    max-width: 800px;
+    float: left;
+    padding: 15px 5px 10px 20px;
+}
+.About-Country{
+    display: flex;
+    max-width: 750px;
+    gap: 40px;
+    padding-top: 50px;
+}
+.Country-Tittle-Design{
+    font-family: "Volkhov", serif;
+    font-size: 32px;
+    line-height: 41px;
+    color: #181E4B;
+}
+.Country-fee{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.price{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color: #DF6951;
+}
+.slash{
+    color: #7D7D7D;
+}
+.faded{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #7D7D7D;
+}
+.country-star{
+    display: flex;
+    max-width: 750px;
+    gap: 20px;
+}
+.review-design{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #5E6282;
+}
+.Country-explanation{
+    max-width: 750px;
+    padding: 30px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.Country-Features{
+    max-width: 750px;
+    display: flex;
+}
+.Type-Of-Service{
+    width: 350px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 60px;
+    color: #DF6951;
+    letter-spacing: 1px;
+}
+.Service-Descripton{
+    max-width: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 60px;
+}
+.Not-Included{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+}
+.Included-positive{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+}
+.From-Our-Gallery{
+    max-width: 750px;
+    position: relative;
+    z-index: 1;
+}
+.Gallery-tittle-style{
+    font-family: "Volkhov", serif;
+    font-size: 50px;
+    color: #181E4B;
+}
+.Gallery-paragraph{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+.Gallery-img{
+    display: flex;
+    max-width: 750px;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.Book-This-Tour{
+    max-width: 500px;
+    margin: 25px;
+    background-color: #EDEDED;
+    text-align: center;
+    align-items: center;
+    float: right;
+}
+.Book-tittle{
+    padding: 20px;
+    font-family: "Volkhov", serif;
+    font-size: 30px;
+    color: #181E48;
+}
+.book-paragraph{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.Packages-Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 30px;
+}
+input{
+    border: none;
+}
+.Packages-Input > div {
+    background-color: #fff;
+    width: 350px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0 15px;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+button{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    background-color: #DF6951;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    margin: 5px;
+}
+.BTT-img{
+    position: relative;
+    right: 160px;
+    z-index: 0;
+ }
