@@ -11,37 +11,72 @@
     position: relative;
 }
 
+.hes-script {
+    margin: 205px auto;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.s-subheading {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+}
+
+.s-heading {
+    font-family: Yesteryear;
+    font-size: 157.43px;
+    font-weight: 400;
+    line-height: 223.68px;
+    margin-top: -20px;
+}
+
 .tour-gallery-container {
-    /* background-color: goldenrod; */
     max-width: 1350px;
-    margin: 30px auto;
-    /* display: flex; */
-    /* position: relative; */
+    margin: -5.25% auto ;
     position: relative;
 }
 
-/* .tg-header {
-    max-width: 1350px;
-    max-height: 768px;
-} */
-
-.tg-secondary-nav-bar {
-    background-color: rgb(80, 182, 182);
-    /* background: rgba(248, 248, 248, 1); */
+/* .tg-secondary-nav-bar {
+    background: rgba(248, 248, 248, 1);
     display: flex;
     justify-content: space-around;
-    padding: 30px;
-    margin-bottom: 40px;
-    /* position: absolute; */
+    padding: 60px ;
 }
 
-.tg-secondary-nav-bar div {
-
+.tg-secondary-nav-bar a li {
+    cursor: pointer;
 }
+
+.tg-secondary-nav-bar li {
+    text-align: center;
+}
+
+.tg-secondary-nav-bar li p {
+    display: inline;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin-left: 10px;
+    margin-top: -50px;
+}
+
+.tg-secondary-nav-bar .snb-gallery {
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.tg-secondary-nav-bar li.split {
+    float: right;
+    background-color: green;
+} */
 
 .tg-image-and-information {
     display:flex;
-    /* position: absolute; */
+    margin-top: 40px;
 }
 
 .ii-image-gallery {
@@ -49,6 +84,7 @@
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: auto;
+    /* margin-left: 50px; */
 }
 
 .ii-image-gallery div {
@@ -113,113 +149,41 @@
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px auto 20px auto;
     color: rgba(0, 0, 0, 1);
 }
 
-.i-inputs div input { 
+.ii-information div {
+    position: relative;
+}
+
+.ii-information div img {
+    position: absolute;
+    transform: translate(100%, 180%);
+}
+
+.ii-information input { 
     display: inline;
-    background-color: rgba(255, 255, 255, 1);
     border: none;
     margin-top: 10px;
     padding: 25px 15px;
     width: 359px;
+    height: 76px;
 }
 
-.in-name [type=text] {
-    background-image: url('images/location/loca-input-user.png');
-    background-position: 28px 27px; 
-    background-repeat: no-repeat;
-} 
-
-.in-name [placeholder] {
+::placeholder {
     color: rgba(0, 0, 0, 0.26);
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    padding-left: 60px;
+    padding-left: 35px;
 }
 
-.in-mail [type=text] {
-    background-image: url('images/location/loca-input-email.png');
-    background-position: 28px 27px; 
-    background-repeat: no-repeat;
-} 
-
-.in-mail [placeholder] {
-    color: rgba(0, 0, 0, 0.26);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    padding-left: 60px;
-}
-
-.in-phone [type=text] {
-    background-image: url('images/location/loca-input-phone.png');
-    background-position: 28px 27px; 
-    background-repeat: no-repeat;
-} 
-
-.in-phone [placeholder] {
-    color: rgba(0, 0, 0, 0.26);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    padding-left: 60px;
-}
-
-.in-date [type=text] {
-    background-image: url('images/location/location-input-date.png');
-    background-position: 28px 27px; 
-    background-repeat: no-repeat;
-} 
-
-.in-date [placeholder] {
-    color: rgba(0, 0, 0, 0.26);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    padding-left: 60px;
-}
-
-.in-ticket [type=text] {
-    background-image: url('images/location/loca-input-tag.png');
-    background-position: 28px 27px; 
-    background-repeat: no-repeat;
-} 
-
-.in-ticket [placeholder] {
-    color: rgba(0, 0, 0, 0.26);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    padding-left: 60px;
-}
-
-.in-message [type=text] {
-    background-image: url('images/location/loca-input-masage.png');
-    background-position: 28px 27px; 
-    background-repeat: no-repeat;
-} 
-
-.in-message [placeholder] {
-    color: rgba(0, 0, 0, 0.26);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    padding-left: 60px;
-}
-
-.i-inputs button {
-    display: inline;
+.ii-information .button {
+    display: block;
     border: none;
-    margin-top: 20px;
+    margin: 20px auto 0px auto;
     padding: 16px 10px;
     font-family: Poppins;
     font-size: 16.72px;
@@ -240,6 +204,6 @@
 .tg-vacation {
     position: absolute;
     right: 5%;
-    bottom: -25%;
+    bottom: -24%;
     z-index: -1;
 }
