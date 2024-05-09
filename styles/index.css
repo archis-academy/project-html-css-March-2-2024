@@ -1,3 +1,136 @@
+.homepage-hero-section {
+  height: 100vh;
+  background: url("../images/homepage-background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hes-title-box {
+  max-width: 1350px;
+  margin: auto;
+  padding-top: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hes-title-box h2 {
+  max-width: 631px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 58px);
+  line-height: clamp(40px, 5vw, 68px);
+  color: #ffffff;
+}
+
+.hes-select-box {
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f3f3f399;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  max-width: 75%;
+  flex-wrap: wrap;
+}
+.hes-select-box button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 15px 55px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(223, 105, 81, 1);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.hes-input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+  max-width: 133px;
+}
+.hes-place {
+  max-width: max-content;
+  padding-left: 5px;
+}
+.hes-input option {
+  color: #000;
+}
+.hes-input::placeholder {
+  color: #fff;
+}
+
+.hes-little-imgs {
+  display: flex;
+  padding-top: 5px;
+  align-items: center;
+  padding-left: 15px;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.hes-little-imgs h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(6px, 1vw, 12px);
+  line-height: 35px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 15px;
+}
+.hes-avatar-emty {
+  border: 3px solid #fff;
+  background-color: rgba(223, 105, 81, 1);
+  border-radius: 50%;
+}
+.hes-scroll-png {
+  position: absolute;
+  max-width: 400px;
+  bottom: 0;
+  left: 25px;
+  transform: translateY(50%);
+}
+.hes-scroll-png img {
+  width: 100%;
+}
+@media (max-width: 1500px) {
+  .hes-title-box {
+    gap: 10px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 880px) {
+  .hes-select-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hes-select-box button {
+    width: 100%;
+  }
+  .hes-select-box img {
+    display: none;
+  }
+  .hes-title-box {
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .hes-action-btn:hover {
+    scale: none;
+  }
+  .hes-none {
+    display: none;
+  }
+}
+
 .ps-slide-image {
   height: 50px;
   opacity: 0.4;
