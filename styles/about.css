@@ -1,3 +1,32 @@
+.about-page-hero {
+  background-image: url("../images/about/about-header-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hes-title-box {
+  margin: 195px auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.ms-read {
+  font-family: Poppins, sans-serif;
+  font-size: clamp(16px, 3.14815px, 18px);
+  font-weight: 700;
+  line-height: clamp(27px, 3vw, 27px);
+  letter-spacing: 0.1em;
+}
+
+.ms-about-us {
+  font-family: Yesteryear, sans-serif;
+  font-size: clamp(120px, 40vw, 157.43px);
+  font-weight: 400;
+  line-height: clamp(125px, 40vw, 223.68px);
+}
+
 .about-promotion {
   display: flex;
   justify-content: center;
