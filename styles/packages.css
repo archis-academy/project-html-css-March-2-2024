@@ -2,6 +2,15 @@
     /* background-color: gray; */
 }
 
+.hero-section {
+    height: 100vh;
+    background: url("../images/location/tour-location-homepage.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
 .tour-gallery-container {
     /* background-color: goldenrod; */
     max-width: 1350px;
