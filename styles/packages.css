@@ -66,7 +66,8 @@
     display: none;
 }
 .package-location {
-        padding: 0 200px;
+    max-width: 1350px;
+    margin: auto;
         transform: translateY(-50px);
 }
 .container {
@@ -76,36 +77,39 @@
 
 .location-page-container {
     display: flex;
+    gap: 35px;
     padding: 20px;
     justify-content: space-between;
     box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
     clip-path: inset(0px -48px -48px -48px);
 }
 .package-location-navbar-box {
+    cursor:pointer;
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    padding: 55px 0;
     background: #f8f8f8;
 }
+.location-page-box{
+    height: 1630px;
+}
 .package-location-navbar > div > a {
-    font-size: 20px;
+    font-size: 12px;
     color: #343434;
     font-family: "Poppins";
     font-weight: 700;
     letter-spacing: 2px;
 }
 .package-location-navbar > div > img {
+    object-fit: contain;
     padding: 0 15px;
 }
 .package-location-navbar {
-    height: 141px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    height: 100px;
     text-align: center;
-}
-.location-page-box{
-    height: 1630px;
-    padding: 35px 28px;
 }
 .location-box-h3{
     color: #181e4b;
@@ -121,11 +125,9 @@
     padding: 30px 0; 
 }
 .location-form {
-    position: relative;
     padding: 30px;
-    width:481px;
-    height: 1000px;
     background: #ededed;
+    height: fit-content;
 }
 .form-box-h2 {
     color: #181e4b;
@@ -155,9 +157,13 @@
 .form-input-box {
     height: 590px;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+.form-date-box{
+    width: 100%;
 }
 .form-input-box > div {
     background-color: #fff;
@@ -179,37 +185,40 @@
 .form-buttons-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     padding-top: 50px;
 }
 .location-img-1 {
     position: absolute;
-    right: 200px;
+    right: 0px;
     bottom: 100px;
     z-index: -1;
 }
 .location-img-2 {
     position: absolute;
-    left: 200px;
+    left: 0px;
     bottom: 0px;
     z-index: -1;
 }
+.hero-nav-link{
+    font-size: 20px;
+}
+.hero-nav-dropdown>a{
+    line-height:35px;
+}
+.nav-links-box>a{
+    font-size: 20px;
+}
 @media (max-width : 1275px){
-    .package-location-navbar-box{
-        padding: 0 20px;
-    }
-    .package-location-navbar > div > img{
-        padding: 55px 0;
-
-    }
-    .package-location-navbar > div > a{
-        padding: 55px 0;
-
-    }
     .package-location-navbar {
         width:100%
 
+    }
+    .package-location-navbar-box {
+        padding: 0 8px;
+    }
+    .location-page-box{
+        height: 1000px;
     }
     .location-page-container{
         flex-direction: column;
@@ -222,7 +231,6 @@
     .location-form{
         background-color: rgba(237, 237, 237, 0.7);
         width: 100%;
-        max-height: 100%;
     }
     .form-input-box > div{
         width: 300px;
@@ -231,14 +239,23 @@
         width: 300px;
     }
     .location-page-box{
-        height: 1100px;
         width: 100%;
     }
     .location-box-gps{
         width: 100%;
     }
+    .location-img-1 {
+        display: none;
+    }
+    .location-img-2 {
+        display: none;
+    }
 }
-
+@media (max-width : 865px) {
+    .package-location-navbar-box {
+        flex-direction: column;
+    }
+}
 @media (max-width : 700px) {
     .location-hero-h1{
         font-size: 100px;

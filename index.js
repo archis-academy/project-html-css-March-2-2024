@@ -24,6 +24,7 @@ servicesLink.addEventListener("click", () => {
  if (!isModalOpen) {
    dropDownLinks.style.display = "block";
    isModalOpen = !isModalOpen;
+
  } else {
    dropDownLinks.style.display = "none";
    isModalOpen = !isModalOpen;
