@@ -1,6 +1,4 @@
 .package-detail-page-tour-gallery {
-    /* background-color: gray; */
-    /* position: relative; */
 }
 
 .hero-section {
@@ -9,7 +7,6 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    position: relative;
 }
 
 .hes-script {
@@ -93,8 +90,8 @@
 .ig-images {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* grid-template-columns: auto; */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns: auto;
     grid-auto-rows: auto;
 }
 
@@ -158,6 +155,7 @@
     padding: 30px 40px;
     background-color: rgba(237, 237, 237, 1);
     text-align: center;
+    position: relative;
 }
 
 .i-title {
@@ -221,11 +219,11 @@
     width: 176px;
 }
 
-/* images are inside container div */
+
 .tg-plant {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 0%;
+    bottom: 0%;
     z-index: -1;
 }
 
@@ -235,21 +233,6 @@
     bottom: 7.4%;
     z-index: -1;
 }
-
-/* images are inside homepage div */
-/* .tg-plant {
-    position: absolute;
-    left: 5.6%;
-    bottom: 3%;
-    z-index: -1;
-}
-
-.tg-vacation {
-    position: absolute;
-    right: 7.5%;
-    bottom: 8%;
-    z-index: -1;
-} */
 
 @media (max-width: 1050px) {
     .tg-secondary-nav-bar .nav {
@@ -263,9 +246,17 @@
 }
 
 @media (max-width: 950px) {
+    .tour-gallery-container {
+        height: 2320px;
+    }
+
     .tg-image-and-information {
         flex-wrap: wrap;
-        padding: 0px 0px;
+        padding: 0px 20px;
+    }
+
+    .ii-image-gallery {
+        margin: 0 auto;
     }
 
     .ig-footer {
@@ -282,9 +273,50 @@
         line-height: 24px;
     }
 
+    .tg-plant, .tg-vacation {
+        display: none;
+    }
+
     .ii-information {
         margin: 0px auto;
+        width: 400px;
+        height: 765px;
     }
+
+    .i-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    .i-script {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .ii-information .i-whole-input input { 
+        width: 300px;
+        height: 50px;
+    }
+
+    .ii-information .i-whole-input img {
+        position: absolute;
+        transform: translate(80%, 120%);
+    }    
+    
+    ::placeholder {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .ii-information .button {
+        margin: 20px auto 0px auto;
+        padding: 16px 10px;
+        font-size: 12px;
+        line-height: 20px;
+        width: 140px;
+    }
+    
+    
 }
 
 @media (max-width: 800px) {
@@ -351,6 +383,13 @@
 
     .tg-secondary-nav-bar .nav p {
         padding-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .package-detail-page-tour-gallery {
+        width: 450px;
+        /* padding: 0px 20px; */
     }
 }
 
