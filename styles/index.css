@@ -436,6 +436,44 @@
   }
 }
 
+.homepage-liberty-banner {
+  background: url("../images/liberty-statue-img.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 0 0 75px;
+}
+.lb-title-box {
+  max-width: 1350px;
+  flex: 1;
+  height: fit-content;
+  padding-left: 25px;
+}
+.lb-title {
+  font-family: "Volkhov", serif;
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: 700;
+  line-height: clamp(40px, 5vw, 72px);
+  color: rgba(255, 255, 255, 1);
+}
+.lb-signature {
+  max-width: 1000px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .homepage-liberty-banner {
+    background-position-x: 75%;
+  }
+  .lb-signature-img {
+    width: 200px;
+  }
+}
+
 .homepage-europe-sightseeing-tours {
   display: flex;
   justify-content: center;
@@ -496,6 +534,7 @@
   max-width: 1350px;
   flex-wrap: wrap;
 }
+
 .homepage-explore-section {
   display: flex;
   padding: 50px 0;
@@ -689,7 +728,6 @@
   font-size: 17px;
 }
 
-
 .homepage-testimonials {
   padding: 0px 20px 50px;
   display: flex;
@@ -868,4 +906,3 @@
     overflow-y: scroll;
   }
 }
-
