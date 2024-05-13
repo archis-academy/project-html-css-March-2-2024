@@ -120,6 +120,7 @@
 .about-trend-section {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 .trend-section {
   max-width: 1350px;
@@ -204,10 +205,10 @@
 }
 @media (max-width: 800px) {
   .about-trend-section {
-    padding: 0 20px;
+    padding: 50px 20px;
   }
   .ts-circles {
-    flex-wrap: wrap;
+    display: inline-table;
   }
 }
 
