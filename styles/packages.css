@@ -18,7 +18,7 @@
 }
 
 .s-subheading {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
@@ -26,7 +26,7 @@
 }
 
 .s-heading {
-    font-family: Yesteryear;
+    font-family: "Yesteryear", sans-serif;
     font-size: 157.43px;
     font-weight: 400;
     line-height: 223.68px;
@@ -35,8 +35,9 @@
 
 .tour-gallery-container {
     max-width: 1350px;
-    height: 2000px;
-    margin: -5.25%  auto 0px auto; 
+    height: 2000px; 
+    margin: 0px auto;
+    transform: translateY(-79px);
     position: relative;
     box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
 }
@@ -49,8 +50,10 @@
 
 .tg-secondary-nav-bar .nav {
     display: flex;
+    align-items: center;
+    flex: 1;
     padding: 60px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -58,13 +61,13 @@
     cursor: pointer;
 }
 
-.tg-secondary-nav-bar .nav:hover  {
+.tg-secondary-nav-bar .nav:hover {
     box-shadow: 0px 4px 48px 12px rgba(0, 0, 0, 0.09);
 }
 
 .tg-secondary-nav-bar .nav img {
-    max-width: 85%;
-    max-height: 85%;
+    width: 26px;
+    height: 26px;
 }
 
 .tg-secondary-nav-bar .nav p {
@@ -84,14 +87,13 @@
 .ii-image-gallery {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
 }
 
 .ig-images {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* grid-template-columns: auto; */
     grid-auto-rows: auto;
 }
 
@@ -132,6 +134,7 @@
 .ig-footer {
     display: flex;
     gap: 20px;
+    margin: 50px auto 0px auto; 
 }
 
 .ig-footer img {
@@ -140,15 +143,15 @@
 }
 
 .ig-footer p {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
 
 .ii-information {
-    max-width: 481px;
-    max-height: 977px;
+    width: 481px;
+    height: 977px;
     margin-left: 30px;
     padding: 30px 40px;
     background-color: rgba(237, 237, 237, 1);
@@ -156,7 +159,7 @@
 }
 
 .i-title {
-    font-family: Volkhov, sans-serif;
+    font-family: "Volkhov", sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 54.18px;
@@ -165,7 +168,7 @@
 }
 
 .i-script {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -174,16 +177,16 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.ii-information div {
+.ii-information .i-whole-input{
     position: relative;
 }
 
-.ii-information div img {
+.ii-information .i-whole-input img {
     position: absolute;
     transform: translate(100%, 180%);
 }
 
-.ii-information input { 
+.ii-information .i-whole-input input { 
     display: inline;
     border: none;
     margin-top: 10px;
@@ -194,7 +197,7 @@
 
 ::placeholder {
     color: rgba(0, 0, 0, 0.26);
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -206,7 +209,7 @@
     border: none;
     margin: 20px auto 0px auto;
     padding: 16px 10px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16.72px;
     font-weight: 600;
     line-height: 25.07px;
@@ -229,3 +232,92 @@
     bottom: 17%;
     z-index: -1;
 }
+
+/* @media (max-width: 1000px) {
+    .tg-image-and-information {
+        flex-wrap: wrap;
+    }
+} */
+
+@media (max-width: 1050px) {
+    .tg-secondary-nav-bar .nav {
+        padding: 30px;
+        font-size: 16px;
+    }
+    
+    .tg-secondary-nav-bar .nav p {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    
+}
+
+@media (max-width: 800px) {
+    .tg-secondary-nav-bar .nav {
+        padding: 20px;
+        font-size: 14px;
+    }
+    
+    .tg-secondary-nav-bar .nav p {
+        padding-left: 6px;
+    }
+}
+
+@media (max-width: 810px) {
+    .tour-gallery-container {
+        transform: translateY(-60px);
+    }
+
+    .s-heading {
+        font-size: 125px;
+        line-height: 200px;
+    }
+}
+
+@media (max-width: 646px) {
+    .tg-secondary-nav-bar .nav {
+        padding: 16px;
+        font-size: 14px;
+    }
+    
+    .tg-secondary-nav-bar .nav img {
+        width: 16px;
+        height: 16px;
+    } 
+    
+    .tg-secondary-nav-bar .nav p {
+        padding-left: 6px;
+    }
+}
+
+@media (max-width: 580px) {
+    .s-subheading {
+        font-size: 13px;
+    }
+
+    .s-heading {
+        font-size: 90px;
+        line-height: 150px;
+    }
+    .tg-secondary-nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tg-secondary-nav-bar .nav img {
+        width: 24px;
+        height: 24px;
+    } 
+
+    .tg-secondary-nav-bar .nav {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .tg-secondary-nav-bar .nav p {
+        padding-left: 10px;
+    }
+}
+
