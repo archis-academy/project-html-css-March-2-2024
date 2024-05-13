@@ -7,19 +7,21 @@
 }
 .Packages-img-text{
     color: #fff;
-    padding: 11% 35%;
+    position: absolute;
+    top:40%;
+    left: 40%;
     text-align: center;
 }
 .explore{
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: clamp(10px, 5vw, 18px);
+    line-height: clamp(14px, 3vw, 27px);
     letter-spacing: 0.2em;
 }
 .landscape{
     font-family: "Yesteryear", cursive;
-    font-size: 160px;
-    line-height: 225px;
+    font-size: clamp(80px, 5vw, 160px);
+    line-height: clamp(100px, 5vw, 225px);
 }
 .Packages-Body-Container{
     position: relative;
@@ -35,12 +37,37 @@
     padding: 50px 100px;
     background-color: #f8f8f8;
 }
+.nav_information{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav_tourplan{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav_location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav_gallery{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .Packages-nav-links:active{
     background-color: darkblue;
 }
+.Packages-Information{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .Packages-Information-About{
     max-width: 800px;
-    float: left;
     padding: 15px 5px 10px 20px;
 }
 .About-Country{
@@ -51,7 +78,7 @@
 }
 .Country-Tittle-Design{
     font-family: "Volkhov", serif;
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px);
     line-height: 41px;
     color: #181E4B;
 }
@@ -62,7 +89,7 @@
 }
 .price{
     font-family: "Poppins", sans-serif;
-    font-size: 30px;
+    font-size: clamp(20px, 5vw, 30px);
     color: #DF6951;
 }
 .slash{
@@ -70,7 +97,7 @@
 }
 .faded{
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: clamp(12px, 3vw, 16px);
     color: #7D7D7D;
 }
 .country-star{
@@ -80,32 +107,32 @@
 }
 .review-design{
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: clamp(12px, 3vw, 16px);
     color: #5E6282;
 }
 .Country-explanation{
     max-width: 750px;
     padding: 30px 0;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: clamp(8px, 3vw, 14px);
 }
 .Country-Features{
     max-width: 750px;
     display: flex;
 }
 .Type-Of-Service{
-    width: 350px;
+    width: 100%;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    line-height: 60px;
+    font-size: clamp(10px, 3vw, 16px);
+    line-height: clamp(40px, 5vw, 60px);
     color: #DF6951;
     letter-spacing: 1px;
 }
 .Service-Descripton{
-    max-width: 400;
+    max-width: 100%;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 60px;
+    font-size: clamp(10px, 3vw, 16px);
+    line-height: clamp(40px, 5vw, 60px);
 }
 .Not-Included{
     display: grid;
@@ -122,12 +149,12 @@
 }
 .Gallery-tittle-style{
     font-family: "Volkhov", serif;
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px);
     color: #181E4B;
 }
 .Gallery-paragraph{
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: clamp(8px, 3vw, 14px);
     color: #000000;
 }
 .Gallery-img{
@@ -142,8 +169,7 @@
     margin: 25px;
     background-color: #EDEDED;
     text-align: center;
-    align-items: center;
-    float: right;
+    height: fit-content;
 }
 .Book-tittle{
     padding: 20px;
@@ -165,6 +191,8 @@
 }
 input{
     border: none;
+    outline: none;
+    width: 100%;
 }
 .Packages-Input > div {
     background-color: #fff;
@@ -191,7 +219,52 @@ button{
     margin: 5px;
 }
 .BTT-img{
-    position: relative;
-    right: 160px;
-    z-index: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: 10%;
+ }
+ @media (max-width:1345px){
+    .Book-This-Tour{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .Packages-Input{
+        max-width: 100%;
+    }
+    .BTT-img{
+        display: none;
+    }
+}
+ @media (max-width:850px) {
+    .nav_information{
+        flex-direction: column;
+    }
+    .nav_tourplan{
+        flex-direction: column;
+    }
+    .nav_location{
+      flex-direction: column;
+    }
+    .nav_gallery{
+        flex-direction: column;
+    }
+ }
+ @media (max-width:770px) {
+    .Packages-nav-links{
+        padding: 25px 25px;
+    }
+    .Gallery-img{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 250px);
+        padding: 10px;
+    }
+ }
+ @media (max-width: 500px) {
+    .Gallery-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
  }
