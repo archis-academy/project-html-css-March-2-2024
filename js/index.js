@@ -6,5 +6,6 @@ document.getElementById("hes-check").addEventListener("change", function () {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
-          }
-  });
+  }
+});
+console.log("test");
