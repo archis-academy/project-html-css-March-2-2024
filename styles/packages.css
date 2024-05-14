@@ -4,10 +4,12 @@
   font-family: "Poppins", sans-serif;
   color: #181e4b;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
 }
 
 .tp-bottom-container {
   display: flex;
+  flex: 1;
 }
 
 .tp-details-container {
@@ -69,6 +71,8 @@
   list-style-type: disc;
 }
 
+
+
 @media (max-width: 768px) {
   .tp-bottom-container {
     flex-direction: column;
@@ -76,6 +80,7 @@
 }
 
 .package-detail-page-tour-gallery {
+  display: none;
 }
 
 .tg-image {
