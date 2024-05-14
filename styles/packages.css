@@ -1,13 +1,14 @@
 
-.package-location-hero {
-    background-image: url(../images/location/tour-location-homepage.png);
-    height: 766px;
+.homepage-hero-section {
+    height: 100vh;
+    background: url(../images/location/tour-location-homepage.png) no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-}
+    overflow: hidden;
+    position: relative;
+  }
 .location-heading-hero{
-    padding: 100px;
+    padding: 100px 20px;
 }
 .hero-nav {
     display: flex;
@@ -47,9 +48,9 @@
 .location-hero-h1 {
     color: #fff;
     font-family: "Yesteryear", cursive;
-    font-size: 158px;
+    font-size: clamp(70px, 15vw, 150px);
     font-weight: 400;
-    line-height: 215px;
+    line-height: clamp(100px, 15vw, 225px);
     text-align: center;
 }
 .hero-nav-dropdown {
@@ -95,7 +96,7 @@
 .location-page-box{
     height: 1630px;
 }
-.package-location-navbar > div > a {
+.package-location-navbar > div > p {
     font-size: 12px;
     color: #343434;
     font-family: "Poppins";
@@ -155,12 +156,13 @@
     outline: none;
 }
 .form-input-box {
-    height: 590px;
+    min-height: 444px;
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding-bottom:15px;
 }
 .form-date-box{
     width: 100%;
@@ -173,7 +175,6 @@
     align-items: center;
 }
 .form-box-btn {
-    width: 176.5px;
     padding: 16px 0;
     background-color: #df6951;
     border-radius: 10px;
@@ -219,6 +220,7 @@
     }
     .location-page-box{
         height: 1000px;
+        height: fit-content;
     }
     .location-page-container{
         flex-direction: column;
@@ -258,8 +260,8 @@
 }
 @media (max-width : 700px) {
     .location-hero-h1{
-        font-size: 100px;
-        line-height: 150px;
+        font-size: 85px;
+        line-height: 110px;
     }
 }
 @media (max-width : 910px) {
