@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 .hes-title-box {
@@ -100,6 +101,7 @@
 
 .wanderlust-video-banner-container {
   position: relative;
+  margin: 75px 0;
 }
 .w-video {
   margin: 0 auto;
@@ -111,8 +113,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Yesteryear", cursive;
-  font-size: 100px;
-
+  font-size: clamp(50px, 9vw, 100px);
   font-weight: 400;
   color: #ffff;
 }
