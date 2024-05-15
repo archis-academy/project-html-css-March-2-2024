@@ -83,21 +83,25 @@
         <div id="package-location-navbar-box0" class="package-location-navbar-box" style="background-color: rgb(248, 248, 248);">
           <img src="../images/location/location-info-logo.png" alt="">
           <p>Information</p>
+          <span class="location-href"></span>
         </div>
         <div id="package-location-navbar-box1" class="package-location-navbar-box" style="background-color: rgb(248, 248, 248);">
           <img src="../images/location/locations_calender-logo.png" alt="">
           <p>Tour Plan</p>
+          <span class="location-href"></span>
         </div>
         <div id="package-location-navbar-box2" class="package-location-navbar-box" style="background-color: rgb(255, 255, 255);">
           <img src="../images/location/icons_location.png" alt="">
           <p>Location</p>
+          <span class="location-href"></span>
         </div>
         <div id="package-location-navbar-box3" class="package-location-navbar-box" style="background-color: rgb(248, 248, 248);">
           <img src="../images/location/location-gallery-logo.png" alt=""><p>Gallery</p>
+          <span class="location-href"></span>
         </div>
       </div>
       <div class="location-page-container">
-          <div class="location-page-box">
+          <div class="location-page-box" id="location-page-id">
               <h3 class="location-box-h3">Tour Plan</h3>
               <p class="location-box-p">
                   Qui tempore voluptate qui quia commodi rem praesentium alias et
@@ -125,7 +129,7 @@
               </p>
               <img class="location-img-2" src="../images/location/tour-location-img002.png" alt="Travel">
           </div>
-             <div class="tp-details-container">
+             <div class="tp-details-container" id="tp-details">
             <h2 class="tp-details-title">Tour Plan</h2>
             <div class="tp-detail">
               <div class="tp-detail-left">
@@ -229,6 +233,7 @@
                 </ul>
               </div>
             </div>
+            <img class="location-img-2" src="../images/location/tour-location-img002.png" alt="Travel">
           </div>
           <form class="location-form">
               <h2 class="form-box-h2">Book This Tour</h2>
@@ -253,7 +258,10 @@
                   <img src="../images/location/loca-input-phone.png" alt="">
                   <input class="form-box-input" type="tel" maxlength="11" placeholder="Phone">
                 </div>
-                <input class="form-box-input form-date-box" type="date" placeholder="dd-mm-yy">
+                <div>
+                  <img src="../images/location/locations_calender-logo.png" alt="">
+                  <input class="form-box-input form-date-box" type="date" placeholder="dd-mm-yy">
+                </div>
                 <div>
                   <img src="../images/location/loca-input-tag.png" alt="">
                   <input class="form-box-input" type="text" placeholder="Number of ticket">
