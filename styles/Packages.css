@@ -1,76 +1,3 @@
-.Packages-img {
-  background-image: url("/images/location/tour-location-homepage.png");
-  height: 800px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.Packages-img-text {
-  color: #fff;
-  position: absolute;
-  top: 40%;
-  right: 0;
-  left: 0;
-  text-align: center;
-}
-.explore {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(10px, 5vw, 18px);
-  line-height: clamp(14px, 3vw, 27px);
-  letter-spacing: 0.2em;
-}
-.landscape {
-  font-family: "Yesteryear", cursive;
-  font-size: clamp(80px, 5vw, 160px);
-  line-height: clamp(100px, 5vw, 225px);
-}
-.Packages-Body-Container {
-  position: relative;
-  margin: auto;
-  top: -70px;
-  max-width: 1350px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-.Packages-nav-links {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 100px;
-  background-color: #f8f8f8;
-  max-width: 1350px;
-}
-.nav_information {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 337.5px;
-}
-.nav_tourplan {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 337.5px;
-}
-.nav_location {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 337.5px;
-}
-.nav_gallery {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 337.5px;
-}
-.Packages-nav-links:active {
-  background-color: darkblue;
-}
-.Packages-Information {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 .Packages-Information-About {
   max-width: 800px;
   padding: 15px 5px 10px 20px;
@@ -172,104 +99,10 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-.Book-This-Tour {
-  max-width: 500px;
-  margin: 25px;
-  background-color: #ededed;
-  text-align: center;
-  height: fit-content;
-}
-.Book-tittle {
-  padding: 20px;
-  font-family: "Volkhov", serif;
-  font-size: 30px;
-  color: #181e48;
-}
-.book-paragraph {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-.Packages-Input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  padding: 30px;
-}
-input {
-  border: none;
-  outline: none;
-  width: 100%;
-}
-#message {
-  border: none;
-}
-.Packages-Input > div {
-  background-color: #fff;
-  width: 100%;
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  border: none;
-  padding: 0 15px;
-  gap: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-}
-button {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  height: 50px;
-  width: 150px;
-  background-color: #df6951;
-  border-radius: 10px;
-  border: none;
-  color: #fff;
-  margin: 5px;
-}
-.BTT-img {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  bottom: 10%;
-}
-@media (max-width: 1345px) {
-  .Book-This-Tour {
-    max-width: 100%;
-    justify-content: center;
-  }
-  .Packages-Input {
-    max-width: 100%;
-  }
-  .BTT-img {
-    display: none;
-  }
-}
-@media (max-width: 850px) {
-  .nav_information {
-    flex-direction: column;
-  }
-  .nav_tourplan {
-    flex-direction: column;
-  }
-  .nav_location {
-    flex-direction: column;
-  }
-  .nav_gallery {
-    flex-direction: column;
-  }
-}
+
 @media (max-width: 770px) {
-  .Packages-nav-links {
-    padding: 25px 25px;
-  }
   .Gallery-img > img {
     height: 165px;
-  }
-  .Book-This-Tour {
-    max-width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -279,8 +112,5 @@ button {
   }
   .Gallery-img > img {
     height: 140px;
-  }
-  .Book-This-Tour {
-    max-width: 90%;
   }
 }
