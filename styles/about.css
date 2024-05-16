@@ -118,6 +118,99 @@
   color: #ffff;
 }
 
+.about-trend-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+.trend-section {
+  max-width: 1350px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ts-cards {
+  max-width: 556px;
+}
+.ts-cards-img {
+  width: 100%;
+}
+.ts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.ts-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(12px, 3vw, 18px);
+  line-height: 27px;
+  color: rgba(223, 105, 81, 1);
+}
+.ts-title {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 50px);
+  line-height: clamp(40px, 5vw, 72px);
+  color: rgba(24, 30, 75, 1);
+}
+.ts-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: clamp(8px, 4vw, 16px);
+  line-height: clamp(12px, 4vw, 26px);
+  color: rgba(0, 0, 0, 1);
+}
+.ts-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.ts-circles-img {
+  max-width: 100%;
+}
+.ts-circles-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 27px;
+  color: rgba(24, 30, 75, 1);
+  display: flex;
+  justify-content: center;
+}
+.ts-shell {
+  max-width: 207px;
+  max-height: 175px;
+  position: absolute;
+  right: 0;
+}
+.ts-shell-img {
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  .ts-shell {
+    display: none;
+  }
+}
+@media (max-width: 1237px) {
+  .trend-section {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .about-trend-section {
+    padding: 50px 20px;
+  }
+  .ts-circles {
+    flex-wrap: wrap;
+  }
+}
+
 .about-explore-packages-section {
   margin-bottom: 200px;
 }
