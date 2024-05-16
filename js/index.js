@@ -24,6 +24,7 @@ const navbar = document.querySelector(".nav-links-box");
 const locationtpdetails = document.getElementById("tp-details");
 const locationtourplan = document.getElementById("location-page-id");
 const tourgallery = document.getElementById("tour-gallery");
+const tourInformation = document.getElementById("tour-information");
 
 for (let i = 0; i < locationNavbarBoxes.length; i++) {
   locationNavbarBoxes[i].addEventListener("click", (value) => {
@@ -33,18 +34,28 @@ for (let i = 0; i < locationNavbarBoxes.length; i++) {
         locationtpdetails.classList.add("active");
         locationtourplan.classList.remove("active");
         tourgallery.classList.remove("active");
+        tourInformation.classList.remove("active");
       } else if (
         value.target.parentElement.children[1].innerHTML == "Location"
       ) {
         locationtpdetails.classList.remove("active");
         locationtourplan.classList.add("active");
         tourgallery.classList.remove("active");
+        tourInformation.classList.remove("active");
       } else if (
         value.target.parentElement.children[1].innerHTML == "Gallery"
       ) {
         locationtpdetails.classList.remove("active");
         locationtourplan.classList.remove("active");
         tourgallery.classList.add("active");
+        tourInformation.classList.remove("active");
+      } else if (
+        value.target.parentElement.children[1].innerHTML == "Information"
+      ) {
+        locationtpdetails.classList.remove("active");
+        locationtourplan.classList.remove("active");
+        tourgallery.classList.remove("active");
+        tourInformation.classList.add("active");
       }
     }
     locationNavbarBoxes[i].style.backgroundColor = "#fff";
