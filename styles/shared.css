@@ -474,3 +474,162 @@ a {
     overflow-y: scroll;
   }
 }
+.homepage-footer {
+  padding: 50px 0;
+  position: relative;
+  font-family: "Manrope", sans-serif;
+}
+
+.footer-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-main-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-main-content {
+  flex: 1;
+}
+
+.footer-content {
+  flex: 1;
+  margin: 20px;
+  text-align: start;
+}
+
+.logo-img {
+  color: #181e4b;
+  text-align: left;
+}
+
+.footer-logo {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.footer-logo embed {
+  margin-right: 10px;
+}
+
+.homepage-footer ul {
+  padding: 0;
+}
+
+.homepage-footer h2 {
+  margin-bottom: 10px;
+}
+
+.homepage-footer ul li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.mail-container {
+  display: flex;
+  align-items: center;
+  max-width: 390px;
+}
+
+.footer-email-input {
+  padding: 15px 15px;
+  border: none;
+  background-color: #eeeeff;
+  outline: none;
+}
+
+.subscribe-btn {
+  background-color: #df6951;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+.footer-text {
+  text-align: left;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  padding-right: 40px;
+  margin-top: 20px;
+  color: #181433;
+}
+.footer-text-sub-information {
+  text-align: left;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin-top: 20px;
+  color: #181433;
+  opacity: 50%;
+}
+
+.sub-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #181433;
+  text-align: center;
+}
+
+hr {
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-list-item {
+  color: #181e4b;
+}
+.footer-list a:hover {
+  text-decoration: underline;
+  color: #181433;
+}
+.footer-image {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 520px) {
+  .footer-main-box {
+    align-items: center;
+    flex-direction: column; /* Değiştirilebilir */
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .mail-container {
+    flex-wrap: wrap;
+  }
+  .subscribe-btn,
+  .footer-email-input {
+    width: 100%;
+  }
+
+  .footer-main-content,
+  .mail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-text,
+  .footer-logo,
+  .logo-img {
+    text-align: center;
+  }
+  .footer-text {
+    padding-right: 0px;
+  }
+}
